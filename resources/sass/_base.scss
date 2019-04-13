@@ -1,0 +1,29 @@
+// COLOR VARIABLES
+$color-primary: #2a79f2;
+$color-primary-dark: #0a4aac;
+$color-primary-light: #8ab5f8;
+$color-invalid: #ff7730;
+$color-valid: #55c57a;
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-primary;
+    color: #000;
+    font-weight: 300;
+    line-height: 1.6;
+    overflow: hidden;
+}
