@@ -13,6 +13,9 @@ body {
   font-weight: 300;
   line-height: 1.6;
   overflow: hidden; }
+  @media only screen and (max-width: 48em) {
+    body {
+      overflow: auto; } }
 
 .features ul {
   font-size: 2rem;
@@ -22,6 +25,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 27em) {
+    .features ul {
+      width: 70%; } }
+  @media only screen and (max-width: 24em) {
+    .features ul {
+      width: 90%; } }
 
 .features__item {
   display: flex;
@@ -98,6 +107,13 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 27em) {
+    .welcome {
+      margin: 3.5rem 0;
+      width: 70%; } }
+  @media only screen and (max-width: 24em) {
+    .welcome {
+      margin: 5rem 0; } }
   .welcome__img {
     width: 10%;
     height: auto;
@@ -152,6 +168,9 @@ body {
   transition: all .3s;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); }
+  @media only screen and (max-width: 48em) {
+    .popup {
+      overflow: auto; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -173,6 +192,18 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 2rem 0; }
+    @media only screen and (max-width: 48em) {
+      .popup__content {
+        width: 60%;
+        top: calc(100% + 2rem);
+        margin-bottom: 5rem; } }
+    @media only screen and (max-width: 27em) {
+      .popup__content {
+        width: 80%;
+        text-align: center; } }
+    @media only screen and (max-width: 24em) {
+      .popup__content {
+        width: 90%; } }
   .popup__heading {
     font-size: 2.5rem;
     font-weight: bold; }
@@ -202,6 +233,9 @@ body {
     transition: all .3s;
     border: 1px solid #999;
     width: 40rem; }
+    @media only screen and (max-width: 27em) {
+      .form__inputs {
+        width: 25rem; } }
     .form__inputs:focus {
       outline: none;
       border: 1px solid #55c57a; }
@@ -243,6 +277,11 @@ body {
       text-decoration: none;
       color: #999;
       font-size: 1.3rem; }
+  @media only screen and (max-width: 48em) {
+    .footer {
+      opacity: 0;
+      z-index: -1;
+      display: none; } }
 
 .disabled, .disabled:hover {
   cursor: not-allowed;
@@ -262,8 +301,15 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 93vh 1fr;
+  grid-template-rows: 93vh;
   grid-template-columns: 50vw 50vw; }
+  @media only screen and (max-width: 48em) {
+    .container {
+      grid-template-rows: 100vh; } }
+  @media only screen and (max-width: 27em) {
+    .container {
+      grid-template-rows: 25rem 25rem;
+      grid-template-columns: 100vw; } }
 
 .left {
   background-color: #2a79f2;

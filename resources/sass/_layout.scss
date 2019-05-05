@@ -1,7 +1,16 @@
 .container {
     display: grid;
-    grid-template-rows: 93vh 1fr;
+    grid-template-rows: 93vh;
     grid-template-columns: 50vw 50vw;
+
+    @media only screen and (max-width: $bp-tablet) {
+        grid-template-rows: 100vh;
+    }
+
+    @media only screen and (max-width: $bp-mobile-large) {
+        grid-template-rows: 25rem 25rem;
+        grid-template-columns: 100vw;
+    }
 }
 
 .left {

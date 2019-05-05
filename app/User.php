@@ -16,7 +16,7 @@ class User extends Authenticatable implements MustVerifyEmail
      * @var array
      */
     protected $fillable = [
-        'name', 'username', 'email', 'password', 'profile_picture', 'cover_photo', 'short_description'
+        'name', 'username', 'email', 'password', 'profile_picture', 'cover_photo', 'short_description', 'location', 'website', 'dob'
     ];
 
     protected $appends = ['time', 'tweets'];
@@ -127,7 +127,11 @@ class User extends Authenticatable implements MustVerifyEmail
      * @return mixed
      */
     public function getTweetsAttribute() {
-        //return '2000;
+        //return '2000';
         return $this->posts->count();
+    }
+
+    public function chats() {
+        return $this->hasMany(Chat::class);
     }
 }

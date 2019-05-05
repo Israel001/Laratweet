@@ -6211,7 +6211,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ":root {\n    --color-primary: #2a79f2;\n    --color-primary-light-1: #8ab5f8;\n    --color-primary-light-2: #dae8fd;\n    --color-primary-dark: #0a4aac;\n    --border: 1px solid rgba(0, 0, 0, 0.1);\n\n    --color-white: #fff;\n}\n\n.cover-photo {\n    background-color: var(--color-primary);\n    height: 50%;\n}\n\n.profile-photo {\n    background-color: var(--color-white);\n    height: 50%;\n}\n\n.user-name {\n    margin-left: 7rem;\n    font-size: 1.05rem;\n}\n\n.choose-photo {\n    border-radius: 50%;\n    background: var(--color-primary);\n    width: 34%;\n    height: 37%;\n    border: 3px solid #fff;\n    position: absolute;\n    top: 35%;\n    left: 5%;\n}\n\n.choose-photo .upload-icon {\n    margin: 70% auto auto 0;\n    fill: var(--color-white);\n}\n\n.user-detail {\n    height: 15rem;\n    position: relative;\n}\n\n.user-info {\n    display: flex;\n    margin: 1rem .5rem .5rem .5rem;\n    justify-content: space-between;\n}\n\n.user-info label { position: relative; }\n\n.trends {\n    background-color: var(--color-white);\n    margin-top: 1rem;\n    min-height: 70vh;\n    padding: 1rem;\n}\n\n.trends__list { padding: .5rem; }\n\n.trends__list a {\n    font-weight: 400;\n    font-size: 1.05rem;\n}\n\n.trends__list span { font-size: .8rem; }\n\n.trends__list div:not(:last-child) {\n    margin-bottom: 1rem;\n}\n\n#textEditor {\n    margin-left: 1rem;\n    flex: 1;\n}\n\n#theRibbon {\n    display: flex;\n    justify-content: space-between;\n    margin-top: .5rem;\n    margin-bottom: .5rem;\n    align-items: center;\n    align-content: center;\n}\n\n#richTextArea {\n    border: 2px solid var(--color-primary-light-1);\n    padding: 10px;\n    height: 80%;\n    width: 100%;\n    border-top-right-radius: 8px;\n    border-top-left-radius: 8px;\n    background-color: var(--color-white);\n    outline: none;\n    max-height: calc(25vh - 30%);\n}\n\n.user-avatar {\n    border-radius: 50%;\n}\n\n\n.upload-photo {\n    opacity: 0;\n    position: absolute;\n    z-index: -1;\n}\n\n.upload-photo + label {\n    position: relative;\n    cursor: pointer;\n}\n\n.tooltiptext {\n    visibility: hidden;\n    width: 150px;\n    background-color: black;\n    color: var(--color-white);\n    text-align: center;\n    border-radius: 6px;\n    padding: 5px 0;\n    position: absolute;\n    z-index: 1;\n    bottom: 85%;\n    left: 50%;\n    margin-left: -75px;\n}\n\n.tooltiptext::after {\n    content: \"\";\n    position: absolute;\n    top: 100%;\n    left: 50%;\n    margin-left: -5px;\n    border-width: 5px;\n    border-style: solid;\n    border-color: black transparent transparent transparent;\n}\n\n.upload-photo + label:hover .tooltiptext { visibility: visible; }\n\n.user-info label:hover .tooltiptext {\n    visibility: visible;\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    padding: 5px;\n    margin-left: 0;\n}\n\n.upload-icon {\n    fill: var(--color-primary);\n    margin-top: 1rem;\n    width: 30px;\n    height: 27px;\n    color: var(--color-primary);\n}\n\n.photo-container {\n    height: -webkit-fit-content;\n    height: -moz-fit-content;\n    height: fit-content;\n    width: 100%;\n    background-color: #f5f8fa;\n    margin-top: -.5rem;\n    border-bottom-right-radius: 8px;\n    border-bottom-left-radius: 8px;\n    padding: 1rem;\n    border: 2px solid var(--color-primary-light-1);\n    border-top: 1px solid darkgray;\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap;\n}\n\n.photo-uploaded {\n    width: 115px;\n    height: 115px;\n    border-radius: 8px;\n    margin-top: .5rem;\n}\n\n.video-uploaded {\n    height: 115px;\n    width: 115px;\n    border-radius: 8px;\n}\n\n.tweet {\n    background-color: var(--color-primary);\n    color: var(--color-white);\n    border-radius: 10rem;\n    outline: none;\n    border: 1px solid var(--color-primary);\n    font-weight: bold;\n    cursor: pointer;\n    padding: .5rem 1rem;\n    transition: all .2s;\n}\n\n.tweet:focus {\n    border: none;\n    outline: none;\n}\n\n.tweet:hover {\n    background-color: var(--color-primary-dark);\n    border: 1px solid var(--color-primary-dark);\n}\n\n.no_tweet {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n    width: 80%;\n}\n\n.loading {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n    text-align: center;\n}\n\n.loading + .no_tweet { visibility: hidden; }\n\n.who-to-follow { background-color: var(--color-white); }\n\n.who-to-follow .heading { padding: 1rem; padding-bottom: 0; }\n\n.who-to-follow .body {\n    display: flex;\n    margin-left: 1rem;\n    margin-right: 1rem;\n    margin-top: 1rem;\n}\n\n\n.body:not(:last-child) {\n    border-bottom: var(--border);\n    padding-bottom: 1rem;\n}\n\n.who-to-follow .footer { padding: 1rem; padding-top: 0; }\n\n.who-to-follow img {\n    border-radius: 50%;\n    height: 50px;\n    width: 50px;\n    align-self: center;\n    margin-right: 1rem;\n}\n\n.who-to-follow .body a:hover { text-decoration: none; }\n\n.who-to-follow span { margin-bottom: .5rem; }\n\n.transparent {\n    background-color: var(--color-white);\n    color: var(--color-primary);\n    padding: .2rem 1rem;\n}\n\n.transparent:hover {\n    background-color: var(--color-primary-light-2);\n}\n\n.page-footer {\n    background-color: #fff;\n    margin-top: 1rem;\n}\n\n.footer__links {\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap;\n}\n\n.footer__links a {\n    color: #999 !important;\n    cursor: pointer;\n}\n\n.page-footer div { padding: 1rem; }\n.page-footer div:last-child { padding-top: 0; }\n\n.disabled, .disabled:hover {\n    cursor: not-allowed;\n    background-color: var(--color-primary);\n    border: 1px solid var(--color-primary);\n    color: #fff;\n    opacity: 0.5;\n}\n\n.tweets {\n    display: grid;\n    grid-template-columns: 10% 1fr;\n    grid-template-rows: -webkit-max-content;\n    grid-template-rows: max-content;\n}\n\n.tweets:not(:last-child) {\n    margin-bottom: 1rem;\n}\n\n.tweets--img img { border-radius: 50%; }\n\n.tweets--content { padding-left: .5rem; width: inherit; }\n\n.tweets--heading {\n    display: flex;\n    min-width: 15rem;\n    max-width: -webkit-max-content;\n    max-width: -moz-max-content;\n    max-width: max-content;\n}\n\n.tweets--heading a {\n    color: #000;\n    font-size: 1.05rem;\n}\n\n.tweets--heading a:hover {\n    color: var(--color-primary);\n}\n\n.tweets--username {\n    padding: 0 .5rem;\n    color: #999;\n}\n.tweets--time { padding: 0 .5rem; color: #999; }\n\n.dot { margin-top: -.2rem; }\n\n.tweets__img { margin-bottom: 1rem; }\n.tweets__img  img {\n    border-radius: 8px;\n    width: 28rem;\n    cursor: pointer;\n}\n\n.tweets--footer { display: flex; }\n.ion-icon {\n    font-size: 1.5rem;\n    color: #999;\n    cursor: pointer;\n}\n.retweet { padding: 0 2rem; }\n.heart:hover { color: red; }\n.red { color: red; }\n.heart { padding-right: .5rem; }\n.tweets--footer div { position: relative; display: flex; }\n.ion-icon:hover + .tooltiptext {\n    visibility: visible;\n    bottom: 100%;\n    width: 70px;\n    margin-left: -43px;\n}\n\n.retweet__body {\n    margin-top: 1rem;\n    padding: 1rem .3rem 0 .5rem;\n    border: var(--border);\n    border-radius: 4px;\n}\n\n.retweet_status { color: #999; justify-self: flex-end; }\n\n.hidden { visibility: hidden; }\n.center { text-align: center; }\n\n.profile-image {\n    border-radius: 50%;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n}\n\n.uploading { display: flex; }\n#upload-video + label { margin-left: 1rem; }\n.image { width: 50px; height: 50px; border-radius: 50%; }\n\n.retweet-image {\n    width: 20rem;\n    border-radius: 8px;\n    cursor: pointer;\n    margin-bottom: .5rem;\n}\n\n.user-photo-container { min-height: 25rem; position: relative; }\n.user-cover-photo {\n    height: 85%;\n    width: 100%;\n    top: 0;\n    background: var(--color-primary);\n    position: absolute;\n}\n.user-profile-photo {\n    height: 15%;\n    width: 100%;\n    top: 85%;\n    position: absolute;\n    background: var(--color-white);\n}\n\n.py-4 { padding-top: 0 !important; }\n", ""]);
+exports.push([module.i, ":root {\n    --color-primary: #2a79f2;\n    --color-primary-light-1: #8ab5f8;\n    --color-primary-light-2: #dae8fd;\n    --color-primary-dark: #0a4aac;\n    --border: 1px solid rgba(0, 0, 0, 0.1);\n    --transparent: rgba(0, 0, 0, 0.5);\n    --color-white: #fff;\n}\n\n#home, #users {\n    position: relative !important;\n    height: 100vh;\n}\n\n.cover-photo {\n    background-color: var(--color-primary);\n    height: 50%;\n}\n\n.profile-photo {\n    background-color: var(--color-white);\n    height: 50%;\n}\n\n.user-name {\n    margin-left: 7rem;\n    font-size: 1.05rem;\n}\n\n.choose-photo {\n    border-radius: 50%;\n    background: var(--color-primary);\n    width: 34%;\n    height: 37%;\n    border: 3px solid #fff;\n    position: absolute;\n    top: 35%;\n    left: 5%;\n}\n\n.choose-photo .upload-icon {\n    margin: 70% auto auto 0;\n    fill: var(--color-white);\n}\n\n.user-detail {\n    height: 15rem;\n    position: relative;\n}\n\n.user-parent-info { display: flex; height: 100%; box-shadow: 0 3px 2px -2px gray; }\n\n.user-info {\n    display: flex;\n    margin: 1rem .5rem .5rem .5rem;\n    justify-content: space-between;\n    text-align: center;\n}\n\n.user-profile-info {\n    width: 18%;\n    margin: .5rem 0 0 25.5rem;\n}\n\n.user-info label { position: relative; cursor: pointer; }\n.user-info label:hover { color: var(--color-primary); font-weight: bold; }\n.user-profile-info span:hover { border-bottom: 2px solid var(--color-primary); }\n.user-info span { cursor: pointer; }\n.user-info span:hover > label { color: var(--color-primary); font-weight: bold; }\n.user-profile-info .selected { border-bottom: 2px solid var(--color-primary); }\n.user-profile-info .selected > label { color: var(--color-primary); font-weight: bold; }\n\n.user-profile-button { margin: 1.25rem 0 1.25rem 30rem; }\n.user-profile-button a { padding: .7rem 2rem; }\n.user-profile-button a:hover { text-decoration: none; }\n\n\n.trends {\n    background-color: var(--color-white);\n    margin: 1rem 0;\n    padding: 1rem;\n}\n\n.trends__list { padding: .5rem; }\n\n.trends__list a {\n    font-weight: 400;\n    font-size: 1.05rem;\n}\n\n.trends__list span { font-size: .8rem; }\n\n.trends__list div:not(:last-child) {\n    margin-bottom: 1rem;\n}\n\n#textEditor {\n    margin-left: 1rem;\n    flex: 1;\n}\n\n#theRibbon {\n    display: flex;\n    justify-content: space-between;\n    margin-top: .5rem;\n    margin-bottom: .5rem;\n    align-items: center;\n    align-content: center;\n}\n\n#richTextArea {\n    border: 2px solid var(--color-primary-light-1);\n    padding: 10px;\n    height: 80%;\n    width: 100%;\n    border-top-right-radius: 8px;\n    border-top-left-radius: 8px;\n    background-color: var(--color-white);\n    outline: none;\n    max-height: calc(25vh - 30%);\n}\n\n#richTextArea::-webkit-scrollbar { display: none; }\n#richTextArea::-webkit-scrollbar-track { display: none; }\n#richTextArea::-webkit-scrollbar-thumb { display: none; }\n\n.user-avatar {\n    border-radius: 50%;\n}\n\n\n.upload-photo {\n    opacity: 0;\n    position: absolute;\n    z-index: -1;\n    left: 50%;\n}\n\n.upload-photo + label {\n    position: relative;\n    cursor: pointer;\n}\n\n.tooltiptext {\n    visibility: hidden;\n    width: 150px;\n    background-color: black;\n    color: var(--color-white);\n    text-align: center;\n    border-radius: 6px;\n    padding: 5px 0;\n    position: absolute;\n    z-index: 1;\n    bottom: 85%;\n    left: 50%;\n    margin-left: -75px;\n}\n\n.tooltiptext::after {\n    content: \"\";\n    position: absolute;\n    top: 100%;\n    left: 50%;\n    margin-left: -5px;\n    border-width: 5px;\n    border-style: solid;\n    border-color: black transparent transparent transparent;\n}\n\n.upload-photo + label:hover .tooltiptext { visibility: visible; }\n\n.user-info label:hover .tooltiptext {\n    visibility: visible;\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    padding: 5px;\n    margin-left: -34px;\n    margin-bottom: 5px;\n}\n\n.upload-icon {\n    fill: var(--color-primary);\n    margin-top: 1rem;\n    width: 30px;\n    height: 27px;\n    color: var(--color-primary);\n}\n\n.photo-container {\n    height: -webkit-fit-content;\n    height: -moz-fit-content;\n    height: fit-content;\n    width: 100%;\n    background-color: #f5f8fa;\n    margin-top: -.5rem;\n    border-bottom-right-radius: 8px;\n    border-bottom-left-radius: 8px;\n    padding: 1rem;\n    border: 2px solid var(--color-primary-light-1);\n    border-top: 1px solid darkgray;\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap;\n}\n\n.photo-uploaded {\n    width: 115px;\n    height: 115px;\n    border-radius: 8px;\n    margin-top: .5rem;\n}\n\n.video-uploaded {\n    height: 115px;\n    width: 115px;\n    border-radius: 8px;\n}\n\n.tweet {\n    background-color: var(--color-primary);\n    color: var(--color-white);\n    border-radius: 10rem;\n    outline: none;\n    border: 1px solid var(--color-primary);\n    font-weight: bold;\n    cursor: pointer;\n    padding: .5rem 1rem;\n    transition: all .2s;\n}\n\n.tweet:focus {\n    border: none;\n    outline: none;\n}\n\n.tweet:hover {\n    background-color: var(--color-primary-dark);\n    border: 1px solid var(--color-primary-dark);\n}\n\n.no_tweet {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n    width: 80%;\n}\n\n.loading {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n    text-align: center;\n}\n\n.loading + .no_tweet { visibility: hidden; }\n\n.who-to-follow { background-color: var(--color-white); }\n\n.who-to-follow .heading { padding: 1rem; padding-bottom: 0; }\n\n.who-to-follow .body {\n    display: flex;\n    margin-left: 1rem;\n    margin-right: 1rem;\n    margin-top: 1rem;\n}\n\n\n.body:not(:last-child) {\n    border-bottom: var(--border);\n    padding-bottom: 1rem;\n}\n\n.who-to-follow .footer { padding: 1rem; padding-top: 0; }\n\n.who-to-follow img {\n    border-radius: 50%;\n    height: 50px;\n    width: 50px;\n    align-self: center;\n    margin-right: 1rem;\n}\n\n.who-to-follow .body a:hover { text-decoration: none; }\n\n.who-to-follow span { margin-bottom: .5rem; }\n\n.transparent {\n    background-color: var(--color-white);\n    color: var(--color-primary);\n    padding: .2rem 1rem;\n}\n\n.transparent:hover {\n    background-color: var(--color-primary-light-2);\n}\n\n.page-footer {\n    background-color: #fff;\n    margin-top: 1rem;\n}\n\n.footer__links {\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap;\n}\n\n.footer__links a {\n    color: #999 !important;\n    cursor: pointer;\n}\n\n.page-footer div { padding: 1rem; }\n.page-footer div:last-child { padding-top: 0; }\n\n.disabled, .disabled:hover {\n    cursor: not-allowed;\n    background-color: var(--color-primary);\n    border: 1px solid var(--color-primary);\n    color: #fff;\n    opacity: 0.5;\n}\n\n.tweets {\n    display: grid;\n    grid-template-columns: 10% 1fr;\n    grid-template-rows: -webkit-max-content;\n    grid-template-rows: max-content;\n}\n\n.tweets:not(:last-child) {\n    margin-bottom: 1rem;\n}\n\n.tweets--img img { border-radius: 50%; }\n\n.tweets--content { padding-left: .5rem; width: inherit; }\n\n.tweets--heading {\n    display: flex;\n    min-width: 15rem;\n    max-width: -webkit-max-content;\n    max-width: -moz-max-content;\n    max-width: max-content;\n}\n\n.tweets--heading a {\n    color: #000;\n    font-size: 1.05rem;\n}\n\n.tweets--heading a:hover {\n    color: var(--color-primary);\n}\n\n.tweets--username {\n    padding: 0 .5rem;\n    color: #999;\n}\n.tweets--time { padding: 0 .5rem; color: #999; }\n\n.dot { margin-top: -.2rem; }\n\n.tweets__img { margin-bottom: 1rem; }\n.tweets__img  img {\n    border-radius: 8px;\n    width: 28rem;\n    cursor: pointer;\n}\n\n.tweets--footer { display: flex; }\n.ion-icon {\n    font-size: 1.5rem;\n    color: #999;\n    cursor: pointer;\n}\n.retweet { padding: 0 2rem; }\n.heart:hover { color: red; }\n.red { color: red; }\n.heart { padding-right: .5rem; }\n.tweets--footer div { position: relative; display: flex; }\n.ion-icon:hover + .tooltiptext {\n    visibility: visible;\n    bottom: 100%;\n    width: 70px;\n    margin-left: -43px;\n}\n\n.retweet__body {\n    margin-top: 1rem;\n    padding: 1rem .3rem 0 .5rem;\n    border: var(--border);\n    border-radius: 4px;\n}\n\n.retweet_status { color: #999; justify-self: flex-end; }\n\n.hidden {\n    opacity: 0;\n    display: none;\n    z-index: -1;\n    width: 0;\n    visibility: hidden;\n}\n\n.center { text-align: center; }\n\n.profile-image {\n    border-radius: 50%;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n}\n\n.uploading { display: flex; }\n#upload-video + label { margin-left: 1rem; }\n.image { width: 50px; height: 50px; border-radius: 50%; }\n\n.retweet-image {\n    width: 20rem;\n    border-radius: 8px;\n    cursor: pointer;\n}\n\n.user-photo-container { min-height: 25rem; position: relative; }\n.user-cover-photo {\n    height: 85%;\n    width: 100%;\n    top: 0;\n    background: var(--color-primary);\n    position: absolute;\n}\n.user-profile-photo {\n    height: 15%;\n    width: 100%;\n    top: 85%;\n    position: absolute;\n    background: var(--color-white);\n}\n\n.py-4 { padding-top: 0 !important; }\n\n.user-choose-photo {\n    width: 17%;\n    height: 15rem;\n    top: -10rem;\n    border-width: 5px;\n}\n\n.user-choose-photo label, .user-cover-photo label {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n}\n\n.user-cover-photo .upload-icon { fill: var(--color-white); }\n\n.profile-info { display: flex; flex-direction: column; }\n.profile-info span:first-child { line-height: 1; }\n.profile-info span:first-child > a { color: #000; }\n.profile-info span:not(:last-child) { margin-bottom: 1rem; }\n.profile-info span:not(:first-child) { display: flex; }\n.profile-info span div { display: flex; }\n.profile-info-icon { font-size: 1.5rem; font-weight: lighter; margin-right: .3rem; }\n.user-firstname { font-size: 1.5rem; }\n.user-username { font-size: .8rem; }\n.bio { height: 30px; }\n\n.my-column {\n    float: left;\n    width: 25%;\n}\n\n.my-modal {\n    display: none;\n    position: fixed;\n    z-index: 20;\n    padding-top: 100px;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    overflow: auto;\n    background-color: rgba(0,0,0,0.3);\n    -webkit-backdrop-filter: blur(10px);\n            backdrop-filter: blur(10px);\n}\n\n.my-modal-content {\n    position: relative;\n    background-color: #fefefe;\n    margin: auto;\n    padding: 0;\n    width: 90%;\n    max-width: 1200px;\n}\n\n.my-close {\n    color: white;\n    position: absolute;\n    top: 50px;\n    right: 25px;\n    font-size: 35px;\n    font-weight: bold;\n}\n\n.my-close:hover, .my-close:focus { text-decoration: none; cursor: pointer; }\n.mySlides { display: none; }\n.my-cursor { cursor: pointer; }\n\n.my-prev, .my-next {\n    cursor: pointer;\n    position: absolute;\n    top: 50%;\n    width: auto;\n    padding: 16px;\n    margin-top: -50px;\n    color: white !important;\n    font-weight: bold;\n    font-size: 20px;\n    transition: 0.6s ease;\n    border-radius: 0 3px 3px 0;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.my-next{ right: 0; border-radius: 3px 0 0 3px; }\n.my-prev:hover, .my-next:hover { background-color: rgba(0, 0, 0, 0.8); }\n\n.my-numbertext {\n    color: #f2f2f2;\n    font-size: 12px;\n    padding: 8px 12px;\n    position: absolute;\n    top: 0;\n}\n\n.my-modal img { margin-bottom: -4px; }\n\n.my-caption-container {\n    text-align: center;\n    background-color: black;\n    padding: 2px 16px;\n    color: white;\n}\n\n.my-demo { opacity: 0.6; }\n.active, .my-demo:hover { opacity: 1; }\n\n.card-footer { text-align: center; }\n.back-to-top {\n    color: var(--color-primary);\n    font-size: 3rem;\n    cursor: pointer;\n}\n\n.follow { position: relative; }\n\n.follow-cover-photo {\n    background-color: var(--color-primary) !important;\n    min-height: 6.5rem;\n    padding: 0;\n}\n\n.follow-cover-image {\n    width: 100%;\n    height: 100%;\n}\n\n.follow-profile-photo {\n    position: absolute;\n    height: 5.4rem;\n    width: 5.5rem;\n    top: 25%;\n    left: 1rem;\n    border-radius: 50%;\n    border: 3px solid #fff;\n}\n\n.follow-profile-image {\n    width: 100%;\n    height: 100%;\n    border-radius: 50%;\n}\n.follow-button a:hover { text-decoration: none; }\n\n.follow-user-name { margin-top: 1rem; line-height: 1rem; }\n.follow-user-name a:first-child { color: #000; font-size: 1.2rem; }\n.follow-user-name a:last-child { color: #999; }\n.follow-user-description { margin-top: 1rem; }\n\n.edit-profile { margin-left: -90px; }\n.edit-profile a:first-child { margin-right: 15px; }\n\n.user-info-input {\n    padding: 10px;\n    border: 2px solid var(--color-primary-light-1);\n    border-radius: 8px;\n    outline: none;\n}\n\n.transparent-box {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: var(--transparent);\n    border-radius: 50%;\n}\n\n.transparent-box span {\n    position: absolute;\n    top: 60%;\n    color: var(--color-white);\n    left: 10%;\n}\n\n.cover-image {\n    width: 100%;\n    height: 100%;\n}\n\n.cover-transparent-box {\n    position: absolute;\n    width: 100%;\n    background: var(--transparent);\n    height: 96%;\n    top: 1rem;\n}\n\n.cover-transparent-box span {\n    position: absolute;\n    top: 60%;\n    color: var(--color-white);\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n}\n\n.tweets__img div:first-child { position: relative; }\n.retweet__img { position: relative; margin-bottom: .5rem; }\n\n.img-transparent-box {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n    border-radius: 8px;\n    cursor: pointer;\n}\n\n.img-transparent-box span {\n    color: var(--color-white);\n    font-size: 4rem;\n    left: 50%;\n    top: 50%;\n    position: absolute;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n}\n\n.retweet__img .img-transparent-box { width: 20rem; }\n\n.welcome__img {\n    width: 3%;\n    height: auto;\n    display: block;\n    margin-bottom: 1.5rem;\n    margin: 0 auto;\n}\n\n#main {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n    font-size: 6.4rem;\n}\n\n.spinner {\n    position: relative;\n}\n\n.spinner:before, .spinner:after {\n    content: \"\";\n    position: relative;\n    display: block;\n}\n\n.spinner:before {\n    -webkit-animation: spinner 2.5s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n            animation: spinner 2.5s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n    width: 1em;\n    height: 1em;\n    background-color: var(--color-primary);\n}\n\n.spinner:after {\n    -webkit-animation: shadow 2.5s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n            animation: shadow 2.5s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;\n    bottom: -.5em;\n    height: .25em;\n    border-radius: 50%;\n    background-color: rgba(0, 0, 0, 0.2);\n}\n\n@-webkit-keyframes spinner {\n    50% {\n        border-radius: 50%;\n        -webkit-transform: scale(0.5) rotate(360deg);\n                transform: scale(0.5) rotate(360deg);\n    }\n    100% {\n        -webkit-transform: scale(1) rotate(720deg);\n                transform: scale(1) rotate(720deg);\n    }\n}\n\n@keyframes spinner {\n    50% {\n        border-radius: 50%;\n        -webkit-transform: scale(0.5) rotate(360deg);\n                transform: scale(0.5) rotate(360deg);\n    }\n    100% {\n        -webkit-transform: scale(1) rotate(720deg);\n                transform: scale(1) rotate(720deg);\n    }\n}\n\n@-webkit-keyframes shadow {\n    50% {\n        -webkit-transform: scale(0.5);\n                transform: scale(0.5);\n        background-color: rgba(0, 0, 0, 0.1);\n    }\n}\n\n@keyframes shadow {\n    50% {\n        -webkit-transform: scale(0.5);\n                transform: scale(0.5);\n        background-color: rgba(0, 0, 0, 0.1);\n    }\n}\n\n.followers-selected, .following-selected { margin: 1.5rem 0; }\n\n.settings {\n    margin: 1rem 0;\n    background: var(--color-white);\n}\n\n.settings__list {\n    list-style: none;\n    padding: 0;\n    /* border: 1px solid #fff; */\n}\n\n.settings__list li:not(:last-child) {\n    border-bottom: var(--border);\n}\n\n.settings__list li {\n    padding: .5rem 1rem;\n    cursor: pointer;\n    display: flex;\n    justify-content: space-between;\n}\n\n.settings__list li:hover {\n    color: var(--color-primary);\n    background: #f5f8fa;\n}\n\n.settings__list li.active {\n    font-weight: bold;\n    color: var(--color-primary);\n}\n\n.arrow { margin-top: .3rem; }\n\n.settings_divs { background: var(--color-white) }\n.settings_divs h3 { padding: 1rem 0 0 1rem; }\n.settings_divs .note { font-size: .8rem !important; }\n.settings_divs #note { margin-left: 1rem; }\n.settings_divs .centered { margin-left: 1rem; padding-bottom: 1rem; }\n\n.form { margin-left: 5rem; }\n.form .form__group { display: flex; }\n.form .form__group div { width: 45%; }\n.form .form__group label { width: 20%; }\n\n.form .form__group .form__control, .data__content input {\n    width: 100%;\n    border-radius: 2px;\n    border: var(--border);\n    padding: .3rem .5rem;\n}\n\n.form .form__group:not(:last-child) { margin-top: 1rem; }\n.form .form__group div span { font-size: .8rem; }\n.form button, .data button { margin: 1rem; }\n\n.checksForm { width: calc(100% - 3rem); margin-left: 3rem; }\n.checksForm .form__group:not(:last-child) { margin-top: 2rem; }\n.form__options { width: 70% !important; margin-left: 5%; }\n.form__options--container { width: 100% !important; display: flex; flex-direction: column; }\n.form__options--container:not(:last-child) { margin-bottom: .5rem; }\n.form__options--container input { margin-right: .5rem; margin-top: .3rem; }\n.form__options--container div { width: 100% !important; }\n.form__options--container div span{ font-size: 1rem !important; }\n\n.password .form { margin-left: 3rem; }\n.password .form .form__group label { width: 30%; }\n\n.data button { margin-top: 0; }\n.data__content { margin-left: 1rem; margin-bottom: 1rem; }\n.data__content input { width: calc(100% - 1rem); margin-top: 1rem; }\n", ""]);
 
 // exports
 
@@ -61162,7 +61162,7 @@ function insertNonHydratedInstance(returnFiber, fiber) {
               didNotFindHydratableContainerTextInstance(parentContainer, text);
               break;
             case SuspenseComponent:
-
+              
               break;
           }
           break;
@@ -71711,7 +71711,7 @@ function addStyle (obj, options) {
 	// If a transform function was defined, run it on the css
 	if (options.transform && obj.css) {
 	    result = typeof options.transform === 'function'
-		 ? options.transform(obj.css)
+		 ? options.transform(obj.css) 
 		 : options.transform.default(obj.css);
 
 	    if (result) {
@@ -72104,8 +72104,8 @@ window.Pusher = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/d
 
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
-  key: "",
-  cluster: "mt1",
+  key: '4100ca8b118192fd01b2',
+  cluster: 'ap1',
   encrypted: true
 });
 
@@ -72206,7 +72206,13 @@ function (_Component) {
       retweets: [],
       loading: false,
       profilePhoto: [],
-      who_to_follow: []
+      who_to_follow: [],
+      trends: [],
+      slide_class: 'mySlides',
+      slideIndex: 1,
+      modal_id: 'myModal',
+      onlineUsers: [],
+      token: ''
     };
     return _this;
   }
@@ -72220,13 +72226,14 @@ function (_Component) {
         loading: true
       });
       axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/posts').then(function (response) {
-        return _this2.setState({
+        _this2.setState({
           user: response.data.user,
           following: response.data.following,
           followers: response.data.followers,
+          who_to_follow: response.data.who_to_follow,
+          trends: response.data.trends,
           posts: _toConsumableArray(response.data.posts),
           retweets: response.data.retweets,
-          who_to_follow: response.data.who_to_follow,
           loading: false
         });
       });
@@ -72241,15 +72248,111 @@ function (_Component) {
     value: function componentDidMount() {
       var _this3 = this;
 
+      this.state.token = $('meta[name="csrf-token"]').attr('content');
       Echo.private('new-post').listen('PostCreated', function (e) {
-        if (window.Laravel.user.following.includes(e.post.user_id)) {
-          _this3.setState({
-            posts: [e.post].concat(_toConsumableArray(_this3.state.posts))
-          });
-        }
+        _this3.setState({
+          posts: [e.post].concat(_toConsumableArray(_this3.state.posts))
+        });
+      });
+      Echo.private('new-chat').listen('BroadcastChat', function (e) {
+        console.log('from broadcasting', e.chat);
+        $('.chatting-body-parent').append("<div class=\"receiver\">\n                            <img src=".concat($('.chat--heading-img').attr('src'), " alt=\"User Image\">\n                            <div class=\"receiver-msg\">\n                                <div><span>").concat(e.chat.chat, "</span></div>\n                            </div>\n                        </div>"));
+      });
+      Echo.join('Online').here(function (users) {
+        console.log('from old online', users); // old online
+
+        _this3.setState({
+          onlineUsers: users
+        });
+      }).joining(function (user) {
+        console.log('from new online', user); // new online
+
+        _this3.setState({
+          onlineUsers: [user].concat(_toConsumableArray(_this3.state.onlineUsers))
+        });
+      }).leaving(function (user) {
+        console.log('offline'); // offline
+
+        _this3.setState({
+          onlineUsers: _this3.state.onlineUsers.filter(function (u) {
+            u != user;
+          })
+        });
       }); // this.interval = setInterval(()=>this.getPosts(), 10000);
     } //componentWillUnmount() { //clearInterval(this.interval); }
 
+  }, {
+    key: "openModal",
+    value: function openModal(post, length) {
+      if (document.getElementById('myModal-' + post)) {
+        document.getElementById('myModal-' + post).style.display = 'block';
+        this.currentSlide(1, length);
+      }
+    }
+  }, {
+    key: "closeModal",
+    value: function closeModal(post) {
+      if (document.getElementById(this.state.modal_id + '-' + post)) document.getElementById(this.state.modal_id + '-' + post).style.display = 'none';
+    }
+  }, {
+    key: "prevSlides",
+    value: function prevSlides(post) {
+      this.showSlides(this.state.slideIndex - 1, post);
+    }
+  }, {
+    key: "nextSlides",
+    value: function nextSlides(post) {
+      this.showSlides(this.state.slideIndex + 1, post);
+    }
+  }, {
+    key: "currentSlide",
+    value: function currentSlide(n, post) {
+      this.showSlides(n, post);
+    }
+  }, {
+    key: "showSlides",
+    value: function showSlides(n, post) {
+      var i;
+      this.state.slideIndex = n;
+      var slides = document.getElementsByClassName(this.state.slide_class);
+      var dots = document.getElementsByClassName('my-demo');
+      var captionText = document.getElementsByClassName('my-caption');
+      if (n > post) this.state.slideIndex = 1;
+      if (n < 1) this.state.slideIndex = post;
+      var slideIndex = this.state.slideIndex;
+
+      for (i = 0; i < post; i++) {
+        slides[i].style.display = 'none';
+      }
+
+      for (i = 0; i < post; i++) {
+        dots[i].className = dots[i].className.replace(' active', '');
+      }
+
+      if (slides[slideIndex - 1]) {
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    }
+  }, {
+    key: "scrollToTop",
+    value: function scrollToTop(scrollDuration) {
+      var cosParameter = window.scrollY / 2,
+          scrollCount = 0,
+          oldTimestamp = performance.now();
+
+      function step(newTimestamp) {
+        scrollCount += Math.PI / (scrollDuration / (newTimestamp - oldTimestamp));
+        if (scrollCount >= Math.PI) window.scrollTo(0, 0);
+        if (window.scrollY === 0) return;
+        window.scrollTo(0, Math.round(cosParameter + cosParameter * Math.cos(scrollCount)));
+        oldTimestamp = newTimestamp;
+        window.requestAnimationFrame(step);
+      }
+
+      window.requestAnimationFrame(step);
+    }
   }, {
     key: "noTweetTag",
     value: function noTweetTag() {
@@ -72268,8 +72371,19 @@ function (_Component) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "loading"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          src: "http://laratweet.local:8080/images/index.flat-ajax-syncing-loading-icon.gif",
+          src: "/images/index.flat-ajax-syncing-loading-icon.gif",
           alt: ""
+        })));
+      }
+    }
+  }, {
+    key: "mainLoadingTag",
+    value: function mainLoadingTag() {
+      if (this.state.loading === true) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          id: "main"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "spinner"
         })));
       }
     }
@@ -72280,11 +72394,15 @@ function (_Component) {
         className: "user-detail"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "cover-photo"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.state.user.cover_photo == null ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cover-image",
+        src: "".concat(this.state.user.cover_photo),
+        alt: "Cover photo"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "profile-photo"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: this.state.user.profile_picture == '' ? 'choose-photo center' : 'choose-photo'
-      }, this.state.user.profile_picture == '' ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        className: this.state.user.profile_picture == null ? 'choose-photo center' : 'choose-photo'
+      }, this.state.user.profile_picture == null ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         id: "profile-photo",
         type: "file",
         name: "",
@@ -72294,11 +72412,11 @@ function (_Component) {
         onChange: this.handleProfilePhotoSubmit.bind(this)
       }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "profile-image",
-        src: "http://laratweet.local:8080/images/" + this.state.user.profile_picture,
+        src: "".concat(this.state.user.profile_picture),
         alt: "Profile photo"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "profile-photo",
-        className: this.state.user.profile_picture == '' ? '' : 'hidden'
+        className: this.state.user.profile_picture == null ? '' : 'hidden'
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
         xmlns: "http://www.w3.org/2000/svg",
         width: "30",
@@ -72313,27 +72431,35 @@ function (_Component) {
         className: "user-name"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, this.state.user.name ? this.state.user.name.substring(0, this.state.user.name.search(" ")) : ''), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " @", this.state.user.username)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "user-info"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Tweets"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, this.formatNumber('tweets').length > 3 ? this.formatNumber('tweets').substr(0, this.formatNumber('tweets').search(',')) + 'K' : this.formatNumber('tweets'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Tweets"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/users/".concat(this.state.user.username)
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, this.formatNumber('tweets').length > 3 ? this.formatNumber('tweets').substr(0, this.formatNumber('tweets').search(',')) + 'K' : this.formatNumber('tweets'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "tooltiptext"
-      }, this.formatNumber('tweets')))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Following"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, this.formatNumber('following').length > 3 ? this.formatNumber('following').substr(0, this.formatNumber('following').search(',')) + 'K' : this.formatNumber('following'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, this.formatNumber('tweets'), " Tweets")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Following"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/users/".concat(this.state.user.username, "/following")
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, this.formatNumber('following').length > 3 ? this.formatNumber('following').substr(0, this.formatNumber('following').search(',')) + 'K' : this.formatNumber('following'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "tooltiptext"
-      }, this.formatNumber('following')))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Followers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, this.formatNumber('followers').length > 3 ? this.formatNumber('followers').substr(0, this.formatNumber('followers').search(',')) + 'K' : this.formatNumber('followers'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, this.formatNumber('following'), " Following")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Followers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/users/".concat(this.state.user.username, "/followers")
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, this.formatNumber('followers').length > 3 ? this.formatNumber('followers').substr(0, this.formatNumber('followers').search(',')) + 'K' : this.formatNumber('followers'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "tooltiptext"
-      }, this.formatNumber('followers'))))))));
+      }, this.formatNumber('followers'), " Followers"))))))));
     }
   }, {
     key: "whoToFollowTag",
     value: function whoToFollowTag() {
+      var _this4 = this;
+
       if (this.state.who_to_follow.length !== 0) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, this.state.who_to_follow.map(function (user) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "body",
             key: user.id
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-            src: user.profile_picture == '' ? 'http://laratweet.local:8080/images/avatar-default.png' : "http://laratweet.local:8080/images/".concat(user.profile_picture),
+            src: user.profile_picture == null ? '/images/avatar-default.png' : "".concat(user.profile_picture),
             alt: "Profile Image"
           }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, user.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            href: "/users/".concat(user.username, "/follow"),
+            onClick: _this4.handleFollow.bind(_this4, user.username),
             className: "tweet transparent"
           }, "Follow")));
         }));
@@ -72346,9 +72472,20 @@ function (_Component) {
       }
     }
   }, {
+    key: "trendsTag",
+    value: function trendsTag() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, this.state.trends.map(function (trend) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: trend.id
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "/users/".concat(trend.username)
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, trend.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, trend.tweets, " Tweet(s)"));
+      }));
+    }
+  }, {
     key: "buildRetweetTag",
     value: function buildRetweetTag() {
-      var _this4 = this;
+      var _this5 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, this.state.retweets.map(function (retweet) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -72357,7 +72494,7 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "tweets--img"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          src: retweet.owner_profile_picture == '' ? '/images/avatar-default.png' : "/images/".concat(retweet.owner_profile_picture),
+          src: retweet.owner_profile_picture == '' ? '/images/avatar-default.png' : "".concat(retweet.owner_profile_picture),
           alt: "User Image",
           className: retweet.owner_profile_picture == '' ? '' : 'image'
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -72381,7 +72518,7 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "tweets--img"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          src: retweet.profile_picture == '' ? '/images/avatar-default.png' : "/images/".concat(retweet.profile_picture),
+          src: retweet.profile_picture == null ? '/images/avatar-default.png' : "".concat(retweet.profile_picture),
           alt: "User Image",
           className: retweet.profile_picture == '' ? '' : 'image'
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -72396,27 +72533,77 @@ function (_Component) {
           className: "dot"
         }, "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "tweets--time"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, retweet.post_time))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", retweet.body, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, JSON.parse(retweet.image) == null ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          src: "http://laratweet.local:8080/images/" + JSON.parse(retweet.image)[0],
-          alt: "Post image",
-          className: "retweet-image"
-        }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, retweet.post_time))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", retweet.body, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, JSON.parse(retweet.image) == null ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "retweet__img"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "".concat(JSON.parse(retweet.image)[0]),
+          alt: "Retweet image",
+          className: "retweet-image",
+          onClick: _this5.openModal.bind(_this5, retweet.id, JSON.parse(retweet.image).length)
+        }), JSON.parse(retweet.image).length > 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "img-transparent-box",
+          onClick: _this5.openModal.bind(_this5, retweet.id, JSON.parse(retweet.image).length)
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "+".concat(JSON.parse(retweet.image).length - 1))) : '', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          id: _this5.state.modal_id + '-' + retweet.id,
+          className: "my-modal"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "my-close my-cursor",
+          onClick: _this5.closeModal.bind(_this5, retweet.id)
+        }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "my-modal-content"
+        }, JSON.parse(retweet.image) == null ? '' : JSON.parse(retweet.image).map(function (img, index) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: _this5.state.slide_class,
+            key: index
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "my-numbertext"
+          }, index + 1, " / ", JSON.parse(retweet.image).length), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: "".concat(JSON.parse(retweet.image)[index]),
+            alt: "Post image",
+            style: {
+              width: '100%'
+            }
+          }));
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: _this5.prevSlides.bind(_this5, JSON.parse(retweet.image).length),
+          className: "my-prev"
+        }, "\u276E"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: _this5.nextSlides.bind(_this5, JSON.parse(retweet.image).length),
+          className: "my-next"
+        }, "\u276F"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "my-caption-container"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          id: "my-caption"
+        })), JSON.parse(retweet.image) == null ? '' : JSON.parse(retweet.image).map(function (img, index) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "my-column",
+            key: index
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            onClick: _this5.currentSlide.bind(_this5, index + 1, JSON.parse(retweet.image).length),
+            src: "".concat(JSON.parse(retweet.image)[index]),
+            alt: "Retweet image",
+            className: "my-demo my-cursor",
+            style: {
+              width: '100%'
+            }
+          }));
+        })))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "tweets--footer"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-          href: "/retweet/likes/".concat(retweet.retweet_id)
-        }, retweet.liked === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
-          class: "ion-icon heart red",
-          name: "heart"
-        }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
-          class: "ion-icon heart",
-          name: "heart-empty"
+          onClick: _this5.handleRetweetLike.bind(_this5, retweet.retweet_id)
+        }, retweet.liked === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "https://img.icons8.com/color/24/000000/hearts.png",
+          className: "ion-icon heart"
+        }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "https://img.icons8.com/ios/24/000000/hearts.png",
+          className: "ion-icon heart"
         }), retweet.liked === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "tooltiptext"
         }, "Unlike") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "tooltiptext"
         }, "Like")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, retweet.retweet_likes)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-          href: "/retweet/".concat(retweet.id)
-        }, _this4.state.user.id === retweet.owner ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+          onClick: _this5.handleRetweet.bind(_this5, retweet.retweet_id)
+        }, _this5.state.user.id === retweet.owner ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
           class: "ion-icon retweet",
           name: "repeat"
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -72427,7 +72614,7 @@ function (_Component) {
   }, {
     key: "buildTweetTag",
     value: function buildTweetTag() {
-      var _this5 = this;
+      var _this6 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, this.state.posts.map(function (post) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -72436,7 +72623,7 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "tweets--img"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          src: post.user.profile_picture == '' ? '/images/avatar-default.png' : "/images/".concat(post.user.profile_picture),
+          src: post.user.profile_picture == null ? '/images/avatar-default.png' : "".concat(post.user.profile_picture),
           alt: "User Image",
           className: post.user.profile_picture == '' ? '' : 'image'
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -72453,26 +72640,74 @@ function (_Component) {
           className: "tweets--time"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, post.time))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", post.body, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "tweets__img"
-        }, JSON.parse(post.image) == null ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          src: "http://laratweet.local:8080/images/" + JSON.parse(post.image)[0],
-          alt: "Post image"
-        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        }, JSON.parse(post.image) == null ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "".concat(JSON.parse(post.image)[0]),
+          alt: "Post image",
+          onClick: _this6.openModal.bind(_this6, post.id, JSON.parse(post.image).length)
+        }), JSON.parse(post.image).length > 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "img-transparent-box",
+          onClick: _this6.openModal.bind(_this6, post.id, JSON.parse(post.image).length)
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "+".concat(JSON.parse(post.image).length - 1))) : '', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          id: _this6.state.modal_id + '-' + post.id,
+          className: "my-modal"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "my-close my-cursor",
+          onClick: _this6.closeModal.bind(_this6, post.id)
+        }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "my-modal-content"
+        }, JSON.parse(post.image) == null ? '' : JSON.parse(post.image).map(function (img, index) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: _this6.state.slide_class,
+            key: index
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "my-numbertext"
+          }, index + 1, " / ", JSON.parse(post.image).length), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: "".concat(JSON.parse(post.image)[index]),
+            alt: "Post image",
+            style: {
+              width: '100%'
+            }
+          }));
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: _this6.prevSlides.bind(_this6, JSON.parse(post.image).length),
+          className: "my-prev"
+        }, "\u276E"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: _this6.nextSlides.bind(_this6, JSON.parse(post.image).length),
+          className: "my-next"
+        }, "\u276F"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "my-caption-container"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          id: "my-caption"
+        })), JSON.parse(post.image) == null ? '' : JSON.parse(post.image).map(function (img, index) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "my-column",
+            key: index
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            onClick: _this6.currentSlide.bind(_this6, index + 1, JSON.parse(post.image).length),
+            src: "".concat(JSON.parse(post.image)[index]),
+            alt: "Post image",
+            className: "my-demo my-cursor",
+            style: {
+              width: '100%'
+            }
+          }));
+        }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "tweets--footer"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-          href: "/likes/".concat(post.id)
-        }, post.liked === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
-          class: "ion-icon heart red",
-          name: "heart"
-        }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
-          class: "ion-icon heart",
-          name: "heart-empty"
+          onClick: _this6.handleLike.bind(_this6, post.id)
+        }, post.liked === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "https://img.icons8.com/color/24/000000/hearts.png",
+          className: "ion-icon heart"
+        }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "https://img.icons8.com/ios/24/000000/hearts.png",
+          className: "ion-icon heart"
         }), post.liked === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "tooltiptext"
         }, "Unlike") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "tooltiptext"
         }, "Like")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, post.likes)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-          href: "/retweet/".concat(post.id)
-        }, _this5.state.user.id === post.user.id ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+          onClick: _this6.handleRetweet.bind(_this6, post.id)
+        }, _this6.state.user.id === post.user.id ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
           class: "ion-icon retweet",
           name: "repeat"
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -72509,7 +72744,7 @@ function (_Component) {
   }, {
     key: "readURI",
     value: function readURI(e, type) {
-      var _this6 = this;
+      var _this7 = this;
 
       if (e.target.files) {
         var files = Array.from(e.target.files);
@@ -72526,7 +72761,7 @@ function (_Component) {
 
         if (type == 'image') {
           Promise.all(promises).then(function (images) {
-            _this6.setState({
+            _this7.setState({
               imageArray: images
             });
           }, function (error) {
@@ -72534,7 +72769,7 @@ function (_Component) {
           });
         } else if (type == 'video') {
           Promise.all(promises).then(function (videos) {
-            _this6.setState({
+            _this7.setState({
               videoArray: videos
             });
           }, function (error) {
@@ -72590,14 +72825,20 @@ function (_Component) {
       if (this.props.onChange !== undefined) {
         this.props.onChange(e);
       }
-    } // handleVideoChange(e) {
-    //     this.readURI(e, 'video');
-    //     if (this.props.onChange !== undefined) {
-    //         this.props.onChange(e);
-    //     }
-    //     this.setState({ video: e.target.value })
-    // }
+    }
+  }, {
+    key: "handleVideoChange",
+    value: function handleVideoChange(e) {
+      this.readURI(e, 'video');
 
+      if (this.props.onChange !== undefined) {
+        this.props.onChange(e);
+      }
+
+      this.setState({
+        video: e.target.value
+      });
+    }
   }, {
     key: "handleBodyChange",
     value: function handleBodyChange(e) {
@@ -72615,12 +72856,20 @@ function (_Component) {
           this.setState({
             profilePhoto: ev.target.result
           }, function () {
+            var _this8 = this;
+
             var formData = new FormData();
             formData.append('file', this.state.profilePhoto);
             axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/add_profile_photo', formData, {
               onUploadProgress: function onUploadProgress(progressEvent) {
                 console.log(progressEvent.loaded / progressEvent.total);
               }
+            }).then(function (response) {
+              console.log('from handle profile photo submit', response);
+
+              _this8.setState({
+                user: response.data.user
+              });
             });
           });
         }.bind(this);
@@ -72631,11 +72880,20 @@ function (_Component) {
   }, {
     key: "handleSubmit",
     value: function handleSubmit(e) {
-      var _this7 = this;
+      var _this9 = this;
 
       e.preventDefault();
+      var lastId = this.state.posts[this.state.posts.length - 1].id++;
+      var file = [];
+      var body = this.state.body;
+      var token = this.state.token;
       var formData = new FormData();
+      this.state.videoArray.forEach(function (video_file) {
+        formData.append('video[]', video_file);
+      });
       this.state.imageArray.forEach(function (image_file) {
+        _this9.file.push(image_file);
+
         formData.append('file[]', image_file);
       });
       formData.append('body', this.state.body);
@@ -72663,25 +72921,121 @@ function (_Component) {
         }
       }
 
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/posts', formData, {
-        onUploadProgress: function onUploadProgress(progressEvent) {
-          console.log(progressEvent.loaded / progressEvent.total);
-        }
-      }).then(function (response) {
-        console.log('from handle submit', response);
-
-        _this7.setState({
-          posts: [response.data].concat(_toConsumableArray(_this7.state.posts))
+      if ('serviceWorker' in navigator && 'SyncManager' in window) {
+        navigator.serviceWorker.ready.then(function (sw) {
+          var post = {
+            id: lastId,
+            file: file,
+            text: body,
+            token: token
+          };
+          writeData('sync-posts', post).then(function () {
+            return sw.sync.register('sync-new-posts');
+          }).then(function () {
+            toastr.options.closeButton = true;
+            toastr.options.showMethod = 'slideDown';
+            toastr.options.hideMethod = 'slideUp';
+            toastr.options.closeMethod = 'slideUp';
+            toastr.options.closeMethod = 'fadeOut';
+            toastr.options.closeDuration = 300;
+            toastr.options.showEasing = 'easeOutBounce';
+            toastr.options.hideEasing = 'easeInBack';
+            toastr.options.closeEasing = 'easeInBack';
+            toastr.options.closeEasing = 'swing';
+            toastr.options.newestOnTop = false;
+            toastr.options.timeOut = 30;
+            toastr.options.extendedTimeOut = 60;
+            toastr.options.progressBar = true;
+            toastr.success('Your post have been saved for syncing', 'Laratweet');
+          }).catch(function (err) {
+            return console.log(err);
+          });
         });
-      });
+      } else {
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/posts', formData, {
+          onUploadProgress: function onUploadProgress(progressEvent) {
+            console.log(progressEvent.loaded / progressEvent.total);
+          }
+        }).then(function (response) {
+          console.log('from handle submit', response);
+
+          _this9.setState({
+            posts: [response.data].concat(_toConsumableArray(_this9.state.posts))
+          });
+        });
+      }
+
       this.setState({
         body: '',
-        imageArray: []
+        imageArray: [],
+        videoArray: []
       });
     }
   }, {
-    key: "render",
-    value: function render() {
+    key: "handleLike",
+    value: function handleLike(post) {
+      var _this10 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/likes/".concat(post)).then(function (response) {
+        console.log('from handle like', response);
+
+        _this10.setState(function (prevState) {
+          return {
+            posts: prevState.posts.map(function (el) {
+              return el.id === post ? response.data.post[0] : el;
+            })
+          };
+        });
+      });
+    }
+  }, {
+    key: "handleRetweetLike",
+    value: function handleRetweetLike(retweet) {
+      var _this11 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/retweet/likes/".concat(retweet)).then(function (response) {
+        console.log('from handle retweet like', response);
+
+        _this11.setState(function (prevState) {
+          return {
+            retweets: prevState.retweets.map(function (el) {
+              return el.retweet_id === retweet ? response.data.retweet[0] : el;
+            })
+          };
+        });
+      });
+    }
+  }, {
+    key: "handleFollow",
+    value: function handleFollow(username) {
+      var _this12 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/users/".concat(username, "/follow")).then(function (response) {
+        console.log('from handle follow', response);
+
+        _this12.setState({
+          posts: [].concat(_toConsumableArray(response.data.post), _toConsumableArray(_this12.state.posts)),
+          who_to_follow: response.data.who_to_follow,
+          following: response.data.following
+        });
+      });
+    }
+  }, {
+    key: "handleRetweet",
+    value: function handleRetweet(post) {
+      var _this13 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/retweet/".concat(post)).then(function (response) {
+        console.log('from handle retweet', response);
+
+        _this13.setState({
+          retweets: [].concat(_toConsumableArray(response.data.retweet), _toConsumableArray(_this13.state.retweets))
+        });
+      });
+    }
+  }, {
+    key: "home",
+    value: function home() {
       var imgTag = this.buildImgTag();
       var videoTag = this.buildVideoTag();
       var noTweet = this.noTweetTag();
@@ -72690,35 +73044,16 @@ function (_Component) {
       var loading = this.loadingTag();
       var userDetail = this.userDetailTag();
       var whoToFollow = this.whoToFollowTag();
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      var trends = this.trendsTag();
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row justify-content-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-3"
       }, userDetail, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "trends"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Trends for you"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Trending users"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "trends__list"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Blackpink")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "889K Tweets")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Blackpink")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "889K Tweets")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Blackpink")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "889K Tweets")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Blackpink")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "889K Tweets")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Blackpink")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "889K Tweets")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Blackpink")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "889K Tweets")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Blackpink")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "889K Tweets")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Blackpink")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "889K Tweets")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: ""
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Blackpink")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "889K Tweets"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, trends))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-6"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card"
@@ -72735,7 +73070,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: this.state.user.profile_picture == '' ? '/images/avatar-default.png' : "/images/".concat(this.state.user.profile_picture),
+        src: this.state.user.profile_picture == null ? '/images/avatar-default.png' : "".concat(this.state.user.profile_picture),
         alt: "User Avatar",
         className: this.state.user.profile_picture == '' ? 'user-avatar' : 'user-avatar image'
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -72750,7 +73085,7 @@ function (_Component) {
         id: "richTextArea",
         placeholder: "What's happening?",
         required: true,
-        maxLength: "280",
+        maxLength: "500",
         onChange: this.handleBodyChange.bind(this)
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "photo-container"
@@ -72774,7 +73109,23 @@ function (_Component) {
         class: "upload-icon"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "tooltiptext"
-      }, "Add photos"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "Add photos"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        id: "upload-video",
+        type: "file",
+        name: "video",
+        accept: "video/mp4,video/x-m4v",
+        title: "Add photos or video",
+        onChange: this.handleVideoChange.bind(this),
+        multiple: true,
+        className: "upload-photo"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "upload-video"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+        name: "videocam",
+        class: "upload-icon"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "tooltiptext"
+      }, "Add videos")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         type: "submit",
         id: "tweet",
         className: this.state.body === '' ? 'tweet disabled' : 'tweet',
@@ -72785,7 +73136,14 @@ function (_Component) {
           minHeight: '50vh',
           position: 'relative'
         }
-      }, !this.state.loading ? retweet : '', !this.state.loading ? tweet : loading, noTweet))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, !this.state.loading ? retweet : '', !this.state.loading ? tweet : loading, noTweet), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-footer"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+        name: "arrow-dropup-circle",
+        class: "back-to-top",
+        title: "Back to Top",
+        onClick: this.scrollToTop.bind(this, 1000)
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "who-to-follow"
@@ -72797,7 +73155,7 @@ function (_Component) {
         className: "footer"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: ""
-      }, "Find people you know"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Find people to follow"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "page-footer"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "footer__links"
@@ -72806,6 +73164,18 @@ function (_Component) {
       }), " Laratweet"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Help Center"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Terms"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Privacy policy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Cookies"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Ads info"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Brand"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Blog"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Status"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Apps"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Jobs"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Marketing"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Businesses"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Developers")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: ""
       }, "Advertise with Laratweet"))))));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var mainLoading = this.mainLoadingTag();
+      var home = this.home();
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container",
+        style: {
+          marginTop: 35
+        }
+      }, this.state.loading ? mainLoading : home);
     }
   }]);
 
@@ -72832,8 +73202,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home/Home */ "./resources/js/components/home/Home.js");
 /* harmony import */ var _notifications_Notifications__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./notifications/Notifications */ "./resources/js/components/notifications/Notifications.js");
 /* harmony import */ var _users_Users__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./users/Users */ "./resources/js/components/users/Users.js");
-/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./App.css */ "./resources/js/components/App.css");
-/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _settings_Settings__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./settings/Settings */ "./resources/js/components/settings/Settings.js");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./App.css */ "./resources/js/components/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 
@@ -72852,6 +73224,20 @@ if (document.getElementById('notifications')) {
 if (document.getElementById('users')) {
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_users_Users__WEBPACK_IMPORTED_MODULE_4__["default"], null), document.getElementById('users'));
 }
+
+if (document.getElementById('settings')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_settings_Settings__WEBPACK_IMPORTED_MODULE_5__["default"], null), document.getElementById('settings'));
+}
+
+caches.keys().then(function (keyList) {
+  return Promise.all(keyList.map(function (key) {
+    caches.open(key).then(function (cache) {
+      cache.delete('/login');
+      cache.delete('/logout');
+      cache.delete('/broadcasting/auth');
+    });
+  }));
+});
 
 /***/ }),
 
@@ -72911,10 +73297,10 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./resources/js/components/users/Users.js":
-/*!************************************************!*\
-  !*** ./resources/js/components/users/Users.js ***!
-  \************************************************/
+/***/ "./resources/js/components/settings/Settings.js":
+/*!******************************************************!*\
+  !*** ./resources/js/components/settings/Settings.js ***!
+  \******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -72945,32 +73331,2648 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+var Settings =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Settings, _Component);
+
+  function Settings(props) {
+    var _this;
+
+    _classCallCheck(this, Settings);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Settings).call(this, props));
+    _this.state = {
+      user: {},
+      profilePhoto: []
+    };
+    return _this;
+  }
+
+  _createClass(Settings, [{
+    key: "getUser",
+    value: function getUser() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/settings/getInfo').then(function (response) {
+        _this2.setState({
+          user: response.data.user
+        });
+      });
+    }
+  }, {
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      this.getUser();
+    }
+  }, {
+    key: "handleProfilePhotoSubmit",
+    value: function handleProfilePhotoSubmit(e) {
+      if (e.target.files) {
+        var reader = new FileReader();
+
+        reader.onload = function (ev) {
+          this.setState({
+            profilePhoto: ev.target.result
+          }, function () {
+            var _this3 = this;
+
+            var formData = new FormData();
+            formData.append('file', this.state.profilePhoto);
+            axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/add_profile_photo', formData, {
+              onUploadProgress: function onUploadProgress(progressEvent) {
+                console.log(progressEvent.loaded / progressEvent.total);
+              }
+            }).then(function (response) {
+              console.log('from handle profile photo submit', response);
+
+              _this3.setState({
+                user: response.data.user
+              });
+            });
+          });
+        }.bind(this);
+
+        reader.readAsDataURL(e.target.files[0]);
+      }
+    }
+  }, {
+    key: "userDetailTag",
+    value: function userDetailTag() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "user-detail"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cover-photo"
+      }, this.state.user.cover_photo == null ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cover-image",
+        src: "".concat(this.state.user.cover_photo),
+        alt: "Cover photo"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "profile-photo"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: this.state.user.profile_picture == null ? 'choose-photo center' : 'choose-photo'
+      }, this.state.user.profile_picture == null ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        id: "profile-photo",
+        type: "file",
+        name: "",
+        accept: "image/gif,image/jpeg,image/jpg,image/png",
+        title: "Add a profile photo",
+        className: "upload-photo",
+        onChange: this.handleProfilePhotoSubmit.bind(this)
+      }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "profile-image",
+        src: "".concat(this.state.user.profile_picture),
+        alt: "Profile photo"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "profile-photo",
+        className: this.state.user.profile_picture == null ? '' : 'hidden'
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        width: "30",
+        height: "27",
+        viewBox: "0 0 20 17",
+        className: "upload-icon"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+        d: "M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "tooltiptext"
+      }, "Add a profile photo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "user-name"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, this.state.user.name ? this.state.user.name.substring(0, this.state.user.name.search(" ")) : ''), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " @", this.state.user.username)))));
+    }
+  }, {
+    key: "changeMenu",
+    value: function changeMenu(cat) {
+      switch (cat) {
+        case 'account':
+          if (document.getElementsByClassName('account')[0]) {
+            document.getElementsByClassName('account')[0].classList.remove('hidden');
+            document.getElementsByClassName('privacy')[0].classList.add('hidden');
+            document.getElementsByClassName('password')[0].classList.add('hidden');
+            document.getElementsByClassName('notifications')[0].classList.add('hidden');
+            document.getElementsByClassName('blocked-account')[0].classList.add('hidden');
+            document.getElementsByClassName('activity')[0].classList.add('hidden');
+            document.getElementsByClassName('data')[0].classList.add('hidden');
+            document.getElementsByClassName('active')[0].classList.remove('active');
+            document.getElementById('account').classList.add('active');
+          }
+
+          break;
+
+        case 'privacy':
+          if (document.getElementsByClassName('privacy')[0]) {
+            document.getElementsByClassName('account')[0].classList.add('hidden');
+            document.getElementsByClassName('privacy')[0].classList.remove('hidden');
+            document.getElementsByClassName('password')[0].classList.add('hidden');
+            document.getElementsByClassName('notifications')[0].classList.add('hidden');
+            document.getElementsByClassName('blocked-account')[0].classList.add('hidden');
+            document.getElementsByClassName('activity')[0].classList.add('hidden');
+            document.getElementsByClassName('data')[0].classList.add('hidden');
+            document.getElementsByClassName('active')[0].classList.remove('active');
+            document.getElementById('privacy').classList.add('active');
+          }
+
+          break;
+
+        case 'password':
+          if (document.getElementsByClassName('password')[0]) {
+            document.getElementsByClassName('account')[0].classList.add('hidden');
+            document.getElementsByClassName('privacy')[0].classList.add('hidden');
+            document.getElementsByClassName('password')[0].classList.remove('hidden');
+            document.getElementsByClassName('notifications')[0].classList.add('hidden');
+            document.getElementsByClassName('blocked-account')[0].classList.add('hidden');
+            document.getElementsByClassName('activity')[0].classList.add('hidden');
+            document.getElementsByClassName('data')[0].classList.add('hidden');
+            document.getElementsByClassName('active')[0].classList.remove('active');
+            document.getElementById('password').classList.add('active');
+          }
+
+          break;
+
+        case 'notifications':
+          if (document.getElementsByClassName('notifications')[0]) {
+            document.getElementsByClassName('account')[0].classList.add('hidden');
+            document.getElementsByClassName('privacy')[0].classList.add('hidden');
+            document.getElementsByClassName('password')[0].classList.add('hidden');
+            document.getElementsByClassName('notifications')[0].classList.remove('hidden');
+            document.getElementsByClassName('blocked-account')[0].classList.add('hidden');
+            document.getElementsByClassName('activity')[0].classList.add('hidden');
+            document.getElementsByClassName('data')[0].classList.add('hidden');
+            document.getElementsByClassName('active')[0].classList.remove('active');
+            document.getElementById('notifications').classList.add('active');
+          }
+
+          break;
+
+        case 'blocked-account':
+          if (document.getElementsByClassName('blocked-account')[0]) {
+            document.getElementsByClassName('account')[0].classList.add('hidden');
+            document.getElementsByClassName('privacy')[0].classList.add('hidden');
+            document.getElementsByClassName('password')[0].classList.add('hidden');
+            document.getElementsByClassName('notifications')[0].classList.add('hidden');
+            document.getElementsByClassName('blocked-account')[0].classList.remove('hidden');
+            document.getElementsByClassName('activity')[0].classList.add('hidden');
+            document.getElementsByClassName('data')[0].classList.add('hidden');
+            document.getElementsByClassName('active')[0].classList.remove('active');
+            document.getElementById('blocked-account').classList.add('active');
+          }
+
+          break;
+
+        case 'activity':
+          if (document.getElementsByClassName('activity')[0]) {
+            document.getElementsByClassName('account')[0].classList.add('hidden');
+            document.getElementsByClassName('privacy')[0].classList.add('hidden');
+            document.getElementsByClassName('password')[0].classList.add('hidden');
+            document.getElementsByClassName('notifications')[0].classList.add('hidden');
+            document.getElementsByClassName('blocked-account')[0].classList.add('hidden');
+            document.getElementsByClassName('activity')[0].classList.remove('hidden');
+            document.getElementsByClassName('data')[0].classList.add('hidden');
+            document.getElementsByClassName('active')[0].classList.remove('active');
+            document.getElementById('activity').classList.add('active');
+          }
+
+          break;
+
+        case 'data':
+          if (document.getElementsByClassName('data')[0]) {
+            document.getElementsByClassName('account')[0].classList.add('hidden');
+            document.getElementsByClassName('privacy')[0].classList.add('hidden');
+            document.getElementsByClassName('password')[0].classList.add('hidden');
+            document.getElementsByClassName('notifications')[0].classList.add('hidden');
+            document.getElementsByClassName('blocked-account')[0].classList.add('hidden');
+            document.getElementsByClassName('activity')[0].classList.add('hidden');
+            document.getElementsByClassName('data')[0].classList.remove('hidden');
+            document.getElementsByClassName('active')[0].classList.remove('active');
+            document.getElementById('data').classList.add('active');
+          }
+
+          break;
+      }
+    }
+  }, {
+    key: "mainLoadingTag",
+    value: function mainLoadingTag() {
+      if (this.state.loading === true) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          id: "main"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "spinner"
+        })));
+      }
+    }
+  }, {
+    key: "setting",
+    value: function setting() {
+      var userDetail = this.userDetailTag();
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-3"
+      }, userDetail, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "settings"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "settings__list"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "active",
+        id: "account",
+        onClick: this.changeMenu.bind(this, 'account')
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Account"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+        name: "arrow-dropright",
+        class: "arrow"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        id: "privacy",
+        onClick: this.changeMenu.bind(this, 'privacy')
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Privacy and safety"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+        name: "arrow-dropright",
+        class: "arrow"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        id: "password",
+        onClick: this.changeMenu.bind(this, 'password')
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+        name: "arrow-dropright",
+        class: "arrow"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        id: "notifications",
+        onClick: this.changeMenu.bind(this, 'notifications')
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Notifications"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+        name: "arrow-dropright",
+        class: "arrow"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        id: "blocked-account",
+        onClick: this.changeMenu.bind(this, 'blocked-account')
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Blocked accounts"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+        name: "arrow-dropright",
+        class: "arrow"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        id: "activity",
+        onClick: this.changeMenu.bind(this, 'activity')
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Activity Log"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+        name: "arrow-dropright",
+        class: "arrow"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        id: "data",
+        onClick: this.changeMenu.bind(this, 'data')
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Your Laratweet data"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+        name: "arrow-dropright",
+        class: "arrow"
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "page-footer"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer__links"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\xA9 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        id: "date"
+      }), " Laratweet"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Help Center"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Terms"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Privacy policy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Cookies"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Ads info"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Brand"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Blog"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Status"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Apps"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Jobs"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Marketing"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Businesses"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Developers")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: ""
+      }, "Advertise with Laratweet")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "settings_divs account"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Account")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        className: "form",
+        autoComplete: "off"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "username"
+      }, "Username"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        name: "username",
+        className: "form__control"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "".concat(window.location.hostname, "/users/").concat(this.state.user.username)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "email"
+      }, "Email"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "email",
+        name: "email",
+        className: "form__control"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Email will not be publicly displayed."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "language"
+      }, "Language"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        name: "language",
+        className: "form__control",
+        value: "English",
+        disabled: true
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Language cannot be changed."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "time-zone"
+      }, "Time zone"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        name: "time-zone",
+        className: "form__control",
+        value: "Time zone",
+        disabled: true
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Timezone cannot be changed."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "tweet"
+      }, "Save changes")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "settings_divs privacy hidden"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Privacy")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        className: "form checksForm",
+        autoComplete: "off"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "tweet-privacy"
+      }, "Tweet privacy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "radio",
+        name: "tweet-privacy",
+        defaultChecked: true
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Allow only followers to see your tweets")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "This is the default status for all tweets.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "radio",
+        name: "tweet-privacy"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Do not allow anyone to see your tweets")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "If selected, only you will see your Tweets. Your future Tweets will not be available publicly. Tweets posted previously will still be publicly visible.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "friends-privacy"
+      }, "Friends"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "radio",
+        name: "friends-privacy",
+        defaultChecked: true
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Allow anyone to follow you")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "This is the default friend status for all users.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "radio",
+        name: "friends-privacy"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Accept request before following")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "If selected, you have to review and accept people's follow request before they can follow you.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "radio",
+        name: "friends-privacy"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Do not allow anyone to follow you")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "If selected, nobody can follow you. Your current followers will still remain.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "messages"
+      }, "Messages"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "radio",
+        name: "messages",
+        defaultChecked: true
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Allow anyone to message you")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "This is the default message status for all users.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "radio",
+        name: "messages"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Only allow people you follow to message you")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "If selected, people you follow can message you.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "radio",
+        name: "messages"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Allow people you follow and people that follow you to message you")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "If selected, only your followers and people you follow can message you.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "radio",
+        name: "messages"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Do not allow anyone to message you")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "If selected, nobody can message you. Your chat history will still remain.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "tweet"
+      }, "Save changes")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "settings_divs password hidden"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Password")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        className: "form",
+        autoComplete: "off"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "curPassword"
+      }, "Current password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "password",
+        className: "form__control"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "password/reset"
+      }, "Forgot your password?")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "newPassword"
+      }, "New password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "password",
+        className: "form__control"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Enter your password"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "verPassword"
+      }, "Verify password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "password",
+        className: "form__control"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Re-enter your password"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "tweet"
+      }, "Save changes")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "settings_divs notifications hidden"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Notifications")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        className: "form checksForm",
+        autoComplete: "off"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "web-notifications"
+      }, "Web notifications"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "checkbox",
+        defaultChecked: true,
+        disabled: true
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Allow notifications from people you follow")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "This is a default notification status. It cannot be changed.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "checkbox",
+        defaultChecked: true
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Allow notifications from everyone")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "You will be notified of all notifications related to you (regardless of the action or person).")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "checkbox"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Mute notifications from people you don't follow")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "If selected, you will not be notified of any action performed by people you don't follow (even if the action is related to you)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "checkbox"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Mute notifications from people who don't follow you")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "If selected, you will not be notified of any action performed by people who don't follow you (even if the action is related to you)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "checkbox"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Mute notifications from people who have a default profile photo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "If selected, you will not be notified of any action performed by people who does not have a profile photo (even if the action is related to you)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "checkbox"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Mute notifications from people who haven't confirmed their email")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "If selected, you will not be notified of any action performed by people whose email is not verified (even if the action is related to you)")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "desk-notifications"
+      }, "Desktop notifications"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__options--container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "checkbox",
+        defaultChecked: true,
+        disabled: true
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Allow desktop notifications")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "This is a default notification status. It cannot be changed.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form__group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "tweet"
+      }, "Save changes")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "settings_divs blocked-account hidden"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Accounts you're blocking")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "note"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "You've blocked these accounts. You will not see their Tweets in your timeline. Additionally, blocked accounts cannot follow you or view your profile while logged in to Laratweet.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "centered"
+      }, "You aren't blocking any accounts.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "settings_divs activity hidden"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Your activities")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "note"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "All activities carried out by you will be shown here.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "centered"
+      }, "You have no activites logged yet. Start by liking a tweet :)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "settings_divs data hidden"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Your Laratweet data")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "data__content"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Confirm password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, "This page contains personal information. Confirm your password to continue."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "password",
+        placeholder: "Password"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "note"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/password/reset"
+      }, "Forgot your password?"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "tweet"
+      }, "Confirm")))));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var mainLoading = this.mainLoadingTag();
+      var setting = this.setting();
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container",
+        style: {
+          marginTop: 35
+        }
+      }, this.state.loading ? mainLoading : setting);
+    }
+  }]);
+
+  return Settings;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Settings);
+
+/***/ }),
+
+/***/ "./resources/js/components/users/Users.js":
+/*!************************************************!*\
+  !*** ./resources/js/components/users/Users.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
 var Users =
 /*#__PURE__*/
 function (_Component) {
   _inherits(Users, _Component);
 
   function Users(props) {
+    var _this;
+
     _classCallCheck(this, Users);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Users).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Users).call(this, props));
+    _this.state = {
+      user: {},
+      following_count: 0,
+      followers_count: 0,
+      likes_count: 0,
+      imageArray: [],
+      videoArray: [],
+      body: '',
+      bio: '',
+      location: '',
+      website: '',
+      dob: '',
+      video: [],
+      posts: [],
+      retweets: [],
+      loading: false,
+      profilePhoto: [],
+      coverPhoto: [],
+      who_to_follow: [],
+      trends: [],
+      following: [],
+      followers: [],
+      post_likes: [],
+      retweet_likes: [],
+      profile_visited: {},
+      can_follow: false,
+      slide_class: 'mySlides',
+      slideIndex: 1,
+      modal_id: 'myModal',
+      verified: false,
+      edit_state: false,
+      token: ''
+    };
+    _this.buildProfileButton = _this.buildProfileButton.bind(_assertThisInitialized(_this));
+    _this.buildMainProfile = _this.buildMainProfile.bind(_assertThisInitialized(_this));
+    _this.buildCoverPhoto = _this.buildCoverPhoto.bind(_assertThisInitialized(_this));
+    _this.buildProfilePhoto = _this.buildProfilePhoto.bind(_assertThisInitialized(_this));
+    _this.buildBioTag = _this.buildBioTag.bind(_assertThisInitialized(_this));
+    _this.buildLocationTag = _this.buildLocationTag.bind(_assertThisInitialized(_this));
+    _this.buildWebsiteTag = _this.buildWebsiteTag.bind(_assertThisInitialized(_this));
+    _this.buildBirthdayTag = _this.buildBirthdayTag.bind(_assertThisInitialized(_this));
+    return _this;
   }
 
   _createClass(Users, [{
+    key: "getUserInfo",
+    value: function getUserInfo() {
+      var _this2 = this;
+
+      this.setState({
+        loading: true
+      });
+      var user = window.location.href.split('/')[4];
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/user/".concat(user)).then(function (response) {
+        return _this2.setState({
+          can_follow: response.data.can_follow,
+          profile_visited: response.data.profile_visited,
+          following_count: response.data.following_count,
+          followers_count: response.data.followers_count,
+          likes_count: response.data.likes_count,
+          user: response.data.user,
+          posts: _toConsumableArray(response.data.posts),
+          retweets: response.data.retweets,
+          who_to_follow: response.data.who_to_follow,
+          trends: response.data.trends,
+          verified: response.data.verified,
+          loading: false
+        }, function () {
+          if (_this2.state.verified === false) {
+            alert('This user is not verified');
+            location.replace('/');
+          }
+        });
+      });
+    }
+  }, {
+    key: "getFollowing",
+    value: function getFollowing() {
+      var _this3 = this;
+
+      this.setState({
+        loading: true
+      });
+      var user = window.location.href.split('/')[4];
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/user/".concat(user, "/following")).then(function (response) {
+        return _this3.setState({
+          following: response.data.following,
+          loading: false
+        });
+      });
+    }
+  }, {
+    key: "getFollowers",
+    value: function getFollowers() {
+      var _this4 = this;
+
+      this.setState({
+        loading: true
+      });
+      var user = window.location.href.split('/')[4];
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/user/".concat(user, "/followers")).then(function (response) {
+        return _this4.setState({
+          followers: response.data.followers,
+          loading: false
+        });
+      });
+    }
+  }, {
+    key: "getLikes",
+    value: function getLikes() {
+      var _this5 = this;
+
+      this.setState({
+        loading: true
+      });
+      var user = window.location.href.split('/')[4];
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/user/".concat(user, "/likes")).then(function (response) {
+        return _this5.setState({
+          post_likes: response.data.post_likes,
+          retweet_likes: response.data.retweet_likes,
+          loading: false
+        });
+      });
+    }
+  }, {
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      this.getUserInfo();
+      this.getFollowing();
+      this.getFollowers();
+      this.getLikes();
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this6 = this;
+
+      this.state.token = $('meta[name="csrf-token"]').attr('content');
+      Echo.private('new-post').listen('PostCreated', function (e) {
+        _this6.setState({
+          posts: [e.post].concat(_toConsumableArray(_this6.state.posts))
+        });
+      });
+      Echo.private('new-chat').listen('BroadcastChat', function (e) {
+        console.log('from broadcasting', e.chat);
+        $('.chatting-body-parent').append("<div class=\"receiver\">\n                            <img src=".concat($('.chat--heading-img').attr('src'), " alt=\"User Image\">\n                            <div class=\"receiver-msg\">\n                                <div><span>").concat(e.chat.chat, "</span></div>\n                            </div>\n                        </div>"));
+      });
+      Echo.join('Online').here(function (users) {
+        console.log('from old online', users); // old online
+
+        _this6.setState({
+          onlineUsers: users
+        });
+      }).joining(function (user) {
+        console.log('from new online', user); // new online
+
+        _this6.setState({
+          onlineUsers: [user].concat(_toConsumableArray(_this6.state.onlineUsers))
+        });
+      }).leaving(function (user) {
+        console.log('offline'); // offline
+
+        _this6.setState({
+          onlineUsers: _this6.state.onlineUsers.filter(function (u) {
+            u != user;
+          })
+        });
+      });
+    }
+  }, {
+    key: "openModal",
+    value: function openModal(post, length) {
+      if (document.getElementById('myModal-' + post)) {
+        document.getElementById('myModal-' + post).style.display = 'block';
+        this.currentSlide(1, length);
+      }
+    }
+  }, {
+    key: "closeModal",
+    value: function closeModal(post) {
+      if (document.getElementById(this.state.modal_id + '-' + post)) document.getElementById(this.state.modal_id + '-' + post).style.display = 'none';
+    }
+  }, {
+    key: "prevSlides",
+    value: function prevSlides(post) {
+      this.showSlides(this.state.slideIndex - 1, post);
+    }
+  }, {
+    key: "nextSlides",
+    value: function nextSlides(post) {
+      this.showSlides(this.state.slideIndex + 1, post);
+    }
+  }, {
+    key: "currentSlide",
+    value: function currentSlide(n, post) {
+      this.showSlides(n, post);
+    }
+  }, {
+    key: "showSlides",
+    value: function showSlides(n, post) {
+      var i;
+      this.state.slideIndex = n;
+      var slides = document.getElementsByClassName(this.state.slide_class);
+      var dots = document.getElementsByClassName('my-demo');
+      var captionText = document.getElementsByClassName('my-caption');
+      if (n > post) this.state.slideIndex = 1;
+      if (n < 1) this.state.slideIndex = post;
+      var slideIndex = this.state.slideIndex;
+
+      for (i = 0; i < post; i++) {
+        slides[i].style.display = 'none';
+      }
+
+      for (i = 0; i < post; i++) {
+        dots[i].className = dots[i].className.replace(' active', '');
+      }
+
+      if (slides[slideIndex - 1]) {
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    }
+  }, {
+    key: "scrollToTop",
+    value: function scrollToTop(scrollDuration) {
+      var cosParameter = window.scrollY / 2,
+          scrollCount = 0,
+          oldTimestamp = performance.now();
+
+      function step(newTimestamp) {
+        scrollCount += Math.PI / (scrollDuration / (newTimestamp - oldTimestamp));
+        if (scrollCount >= Math.PI) window.scrollTo(0, 0);
+        if (window.scrollY === 0) return;
+        window.scrollTo(0, Math.round(cosParameter + cosParameter * Math.cos(scrollCount)));
+        oldTimestamp = newTimestamp;
+        window.requestAnimationFrame(step);
+      }
+
+      window.requestAnimationFrame(step);
+    }
+  }, {
+    key: "noTweetTag",
+    value: function noTweetTag() {
+      if (this.state.user.username === this.state.profile_visited.username && this.state.loading === false && (this.state.posts === undefined || this.state.posts.length === 0)) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "no_tweet"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "What? No Tweets yet?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This empty timeline won't be around for long. Start following people and you'll see Tweets show up here."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          className: "tweet"
+        }, "Find people to follow")));
+      } else if (this.state.loading === false && (this.state.posts === undefined || this.state.posts.length === 0)) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "no_tweet"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "This timeline has no tweets currently")));
+      }
+    }
+  }, {
+    key: "readURI",
+    value: function readURI(e, type) {
+      var _this7 = this;
+
+      if (e.target.files) {
+        var files = Array.from(e.target.files);
+        var promises = files.map(function (file) {
+          return new Promise(function (resolve, reject) {
+            var reader = new FileReader();
+            reader.addEventListener('load', function (ev) {
+              resolve(ev.target.result);
+            });
+            reader.addEventListener('error', reject);
+            reader.readAsDataURL(file);
+          });
+        });
+
+        if (type == 'image') {
+          Promise.all(promises).then(function (images) {
+            _this7.setState({
+              imageArray: images
+            });
+          }, function (error) {
+            console.error(error);
+          });
+        } else if (type == 'video') {
+          Promise.all(promises).then(function (videos) {
+            _this7.setState({
+              videoArray: videos
+            });
+          }, function (error) {
+            console.error(error);
+          });
+        }
+      }
+    }
+  }, {
+    key: "whoToFollowTag",
+    value: function whoToFollowTag() {
+      var _this8 = this;
+
+      if (this.state.who_to_follow.length !== 0) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, this.state.who_to_follow.map(function (user) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "body",
+            key: user.id
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: user.profile_picture == null ? '/images/avatar-default.png' : "".concat(user.profile_picture),
+            alt: "Profile Image"
+          }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, user.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            onClick: _this8.handleFollow.bind(_this8, user.username),
+            className: "tweet transparent"
+          }, "Follow")));
+        }));
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "heading"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "alert alert-danger"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Sorry, we could not suggest who to follow for you based on insufficient data. You can click the link below to find people you know manually."))));
+      }
+    }
+  }, {
+    key: "trendsTag",
+    value: function trendsTag() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, this.state.trends.map(function (trend) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: trend.id
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "/users/".concat(trend.username)
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, trend.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, trend.tweets, " Tweet(s)"));
+      }));
+    }
+  }, {
+    key: "buildRetweetTag",
+    value: function buildRetweetTag() {
+      var _this9 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, this.state.retweets.map(function (retweet) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets",
+          key: retweet.id
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets--img"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: retweet.owner_profile_picture == '' ? '/images/avatar-default.png' : "".concat(retweet.owner_profile_picture),
+          alt: "User Image",
+          className: retweet.owner_profile_picture == '' ? '' : 'image'
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets--content"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets--heading"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "/users/".concat(retweet.owner_username)
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, retweet.owner_name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tweets--username"
+        }, "@", retweet.owner_username), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "dot"
+        }, "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tweets--time"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, retweet.retweet_time)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "retweet_status"
+        }, "Retweeted")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "retweet__body"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets--img"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: retweet.profile_picture == null ? '/images/avatar-default.png' : "".concat(retweet.profile_picture),
+          alt: "User Image",
+          className: retweet.profile_picture == '' ? '' : 'image'
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets--content"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets--heading"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "/users/".concat(retweet.username)
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, retweet.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tweets--username"
+        }, "@", retweet.username), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "dot"
+        }, "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tweets--time"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, retweet.post_time))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", retweet.body, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, JSON.parse(retweet.image) == null ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "retweet__img"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "".concat(JSON.parse(retweet.image)[0]),
+          alt: "Retweet image",
+          className: "retweet-image",
+          onClick: _this9.openModal.bind(_this9, retweet.id, JSON.parse(retweet.image).length)
+        }), JSON.parse(retweet.image).length > 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "img-transparent-box",
+          onClick: _this9.openModal.bind(_this9, retweet.id, JSON.parse(retweet.image).length)
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "+".concat(JSON.parse(retweet.image).length - 1))) : '', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          id: _this9.state.modal_id + '-' + retweet.id,
+          className: "my-modal"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "my-close my-cursor",
+          onClick: _this9.closeModal.bind(_this9, retweet.id)
+        }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "my-modal-content"
+        }, JSON.parse(retweet.image) == null ? '' : JSON.parse(retweet.image).map(function (img, index) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: _this9.state.slide_class,
+            key: index
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "my-numbertext"
+          }, index + 1, " / ", JSON.parse(retweet.image).length), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: "".concat(JSON.parse(retweet.image)[index]),
+            alt: "Post image",
+            style: {
+              width: '100%'
+            }
+          }));
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: _this9.prevSlides.bind(_this9, JSON.parse(retweet.image).length),
+          className: "my-prev"
+        }, "\u276E"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: _this9.nextSlides.bind(_this9, JSON.parse(retweet.image).length),
+          className: "my-next"
+        }, "\u276F"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "my-caption-container"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          id: "my-caption"
+        })), JSON.parse(retweet.image) == null ? '' : JSON.parse(retweet.image).map(function (img, index) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "my-column",
+            key: index
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            onClick: _this9.currentSlide.bind(_this9, index + 1, JSON.parse(retweet.image).length),
+            src: "".concat(JSON.parse(retweet.image)[index]),
+            alt: "Retweet image",
+            className: "my-demo my-cursor",
+            style: {
+              width: '100%'
+            }
+          }));
+        })))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets--footer"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: _this9.handleRetweetLike.bind(_this9, retweet.retweet_id)
+        }, retweet.liked === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "https://img.icons8.com/color/24/000000/hearts.png",
+          className: "ion-icon heart"
+        }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "https://img.icons8.com/ios/24/000000/hearts.png",
+          className: "ion-icon heart"
+        }), retweet.liked === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tooltiptext"
+        }, "Unlike") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tooltiptext"
+        }, "Like")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, retweet.retweet_likes)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "/retweet/".concat(retweet.id)
+        }, _this9.state.user.id === retweet.owner ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+          class: "ion-icon retweet",
+          name: "repeat"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tooltiptext"
+        }, "Retweet"))))));
+      }));
+    }
+  }, {
+    key: "buildTweetTag",
+    value: function buildTweetTag() {
+      var _this10 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, this.state.posts.map(function (post) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets",
+          key: post.id
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets--img"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: post.user.profile_picture == null ? '/images/avatar-default.png' : "".concat(post.user.profile_picture),
+          alt: "User Image",
+          className: post.user.profile_picture == '' ? '' : 'image'
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets--content"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets--heading"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "/users/".concat(post.user.username)
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, post.user.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tweets--username"
+        }, "@", post.user.username), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "dot"
+        }, "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tweets--time"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, post.time))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", post.body, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets__img"
+        }, JSON.parse(post.image) == null ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "".concat(JSON.parse(post.image)[0]),
+          alt: "Post image",
+          onClick: _this10.openModal.bind(_this10, post.id, JSON.parse(post.image).length)
+        }), JSON.parse(post.image).length > 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "img-transparent-box",
+          onClick: _this10.openModal.bind(_this10, post.id, JSON.parse(post.image).length)
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "+".concat(JSON.parse(post.image).length - 1))) : '', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          id: _this10.state.modal_id + '-' + post.id,
+          className: "my-modal"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "my-close my-cursor",
+          onClick: _this10.closeModal.bind(_this10, post.id)
+        }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "my-modal-content"
+        }, JSON.parse(post.image) == null ? '' : JSON.parse(post.image).map(function (img, index) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: _this10.state.slide_class,
+            key: index
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "my-numbertext"
+          }, index + 1, " / ", JSON.parse(post.image).length), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: "".concat(JSON.parse(post.image)[index]),
+            alt: "Post image",
+            style: {
+              width: '100%'
+            }
+          }));
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: _this10.prevSlides.bind(_this10, JSON.parse(post.image).length),
+          className: "my-prev"
+        }, "\u276E"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: _this10.nextSlides.bind(_this10, JSON.parse(post.image).length),
+          className: "my-next"
+        }, "\u276F"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "my-caption-container"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          id: "my-caption"
+        })), JSON.parse(post.image) == null ? '' : JSON.parse(post.image).map(function (img, index) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "my-column",
+            key: index
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            onClick: _this10.currentSlide.bind(_this10, index + 1, JSON.parse(post.image).length),
+            src: "".concat(JSON.parse(post.image)[index]),
+            alt: "Post image",
+            className: "my-demo my-cursor",
+            style: {
+              width: '100%'
+            }
+          }));
+        }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "tweets--footer"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: _this10.handleLike.bind(_this10, post.id)
+        }, post.liked === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "https://img.icons8.com/color/24/000000/hearts.png",
+          className: "ion-icon heart"
+        }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: "https://img.icons8.com/ios/24/000000/hearts.png",
+          className: "ion-icon heart"
+        }), post.liked === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tooltiptext"
+        }, "Unlike") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tooltiptext"
+        }, "Like")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, post.likes)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "/retweet/".concat(post.id)
+        }, _this10.state.user.id === post.user.id ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+          class: "ion-icon retweet",
+          name: "repeat"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tooltiptext"
+        }, "Retweet"))))));
+      }));
+    }
+  }, {
+    key: "buildImgTag",
+    value: function buildImgTag() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, this.state.imageArray.map(function (imageURI, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          key: index,
+          className: "photo-uploaded",
+          src: imageURI,
+          alt: "Photo uploaded"
+        });
+      }));
+    }
+  }, {
+    key: "buildVideoTag",
+    value: function buildVideoTag() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, this.state.videoArray.map(function (videoURI, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
+          key: index,
+          controls: true,
+          autoPlay: true,
+          className: "video-uploaded"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
+          src: videoURI
+        }));
+      }));
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(e) {
+      var _this11 = this;
+
+      e.preventDefault();
+      var lastId = this.state.posts[this.state.posts.length - 1].id++;
+      var file = [];
+      var body = this.state.body;
+      var token = this.state.token;
+      var formData = new FormData();
+      this.state.videoArray.forEach(function (video_file) {
+        formData.append('video[]', video_file);
+      });
+      this.state.imageArray.forEach(function (image_file) {
+        _this11.file.push(image_file);
+
+        formData.append('file[]', image_file);
+      });
+      formData.append('body', this.state.body);
+      var _iteratorNormalCompletion = true;
+      var _didIteratorError = false;
+      var _iteratorError = undefined;
+
+      try {
+        for (var _iterator = formData.entries()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+          var pair = _step.value;
+          console.log(pair[0] + ', ' + pair[1]);
+        }
+      } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion && _iterator.return != null) {
+            _iterator.return();
+          }
+        } finally {
+          if (_didIteratorError) {
+            throw _iteratorError;
+          }
+        }
+      }
+
+      if ('serviceWorker' in navigator && 'SyncManager' in window) {
+        navigator.serviceWorker.ready.then(function (sw) {
+          var post = {
+            id: lastId,
+            file: file,
+            text: body,
+            token: token
+          };
+          writeData('sync-posts', post).then(function () {
+            return sw.sync.register('sync-new-posts');
+          }).then(function () {
+            toastr.options.closeButton = true;
+            toastr.options.showMethod = 'slideDown';
+            toastr.options.hideMethod = 'slideUp';
+            toastr.options.closeMethod = 'slideUp';
+            toastr.options.closeMethod = 'fadeOut';
+            toastr.options.closeDuration = 300;
+            toastr.options.showEasing = 'easeOutBounce';
+            toastr.options.hideEasing = 'easeInBack';
+            toastr.options.closeEasing = 'easeInBack';
+            toastr.options.closeEasing = 'swing';
+            toastr.options.newestOnTop = false;
+            toastr.options.timeOut = 30;
+            toastr.options.extendedTimeOut = 60;
+            toastr.options.progressBar = true;
+            toastr.success('Your post have been saved for syncing', 'Laratweet');
+          }).catch(function (err) {
+            return console.log(err);
+          });
+        });
+      } else {
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/posts', formData, {
+          onUploadProgress: function onUploadProgress(progressEvent) {
+            console.log(progressEvent.loaded / progressEvent.total);
+          }
+        }).then(function (response) {
+          console.log('from handle submit', response);
+
+          _this11.setState({
+            posts: [response.data].concat(_toConsumableArray(_this11.state.posts))
+          });
+        });
+      }
+
+      this.setState({
+        body: '',
+        imageArray: [],
+        videoArray: []
+      });
+    }
+  }, {
+    key: "handleEditSubmit",
+    value: function handleEditSubmit(e) {
+      var _this12 = this;
+
+      e.preventDefault();
+      var formData = new FormData();
+      formData.append('bio', this.state.bio);
+      formData.append('location', this.state.location);
+      formData.append('website', this.state.website);
+      formData.append('dob', this.state.dob);
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/edit_user_info', formData).then(function (response) {
+        console.log('from handle edit submit', response);
+
+        _this12.setState({
+          user: response.data.user,
+          profile_visited: response.data.user
+        });
+      });
+      this.setState({
+        edit_state: false,
+        bio: '',
+        location: '',
+        website: '',
+        dob: ''
+      });
+    }
+  }, {
+    key: "buildMainProfile",
+    value: function buildMainProfile() {
+      var imgTag = this.buildImgTag();
+      var videoTag = this.buildVideoTag();
+      var noTweet = this.noTweetTag();
+      var tweet = this.buildTweetTag();
+      var retweet = this.buildRetweetTag();
+
+      if (this.state.user.username === this.state.profile_visited.username) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "col-md-6",
+          id: "main_profile"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-header",
+          style: {
+            backgroundColor: 'rgb(232, 245, 253)',
+            borderTopLeftRadius: '4px',
+            borderTopRightRadius: '4px',
+            display: 'flex',
+            height: 'fit-content',
+            overflow: 'hidden'
+          }
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "avatar"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: this.state.profile_visited.profile_picture == null ? '/images/avatar-default.png' : "".concat(this.state.profile_visited.profile_picture),
+          alt: "User Avatar",
+          className: this.state.profile_visited.profile_picture == '' ? 'user-avatar' : 'user-avatar image'
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          id: "textEditor"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+          method: "post",
+          encType: "multipart/form-data",
+          onSubmit: this.handleSubmit.bind(this)
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+          value: this.state.body,
+          name: "",
+          id: "richTextArea",
+          placeholder: "What's happening?",
+          required: true,
+          maxLength: "500",
+          onChange: this.handleBodyChange.bind(this)
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "photo-container"
+        }, imgTag, " ", videoTag), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          id: "theRibbon"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "uploading"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          id: "upload-photo",
+          type: "file",
+          name: "",
+          accept: "image/gif,image/jpeg,image/jpg,image/png",
+          title: "Add photos or video",
+          onChange: this.handleFileChange.bind(this),
+          multiple: true,
+          className: "upload-photo"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+          htmlFor: "upload-photo"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+          name: "images",
+          class: "upload-icon"
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tooltiptext"
+        }, "Add photos")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          type: "submit",
+          id: "tweet",
+          className: this.state.body === '' ? 'tweet disabled' : 'tweet',
+          disabled: this.state.body === '' ? true : false
+        }, "Tweet"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-body",
+          style: {
+            minHeight: '50vh',
+            position: 'relative'
+          }
+        }, !this.state.loading ? retweet : '', !this.state.loading ? tweet : '', noTweet), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-footer"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+          name: "arrow-dropup-circle",
+          class: "back-to-top",
+          title: "Back to Top",
+          onClick: this.scrollToTop.bind(this, 1000)
+        })))));
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "col-md-6"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-body",
+          style: {
+            minHeight: '50vh',
+            position: 'relative'
+          }
+        }, !this.state.loading ? retweet : '', !this.state.loading ? tweet : '', noTweet))));
+      }
+    }
+  }, {
+    key: "buildFollowing",
+    value: function buildFollowing() {
+      var _this13 = this;
+
+      if (this.state.loading === false) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "container"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "row"
+        }, this.state.following.map(function (user) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "col-md-3 hidden following-selected",
+            key: user.id
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "card follow"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "card-header follow-cover-photo"
+          }, user.cover_photo == null ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: "".concat(user.cover_photo),
+            alt: "Cover Photo",
+            className: "follow-cover-image"
+          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "follow-profile-photo"
+          }, user.profile_picture == null ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            className: "follow-profile-image",
+            src: "../../images/avatar-default.png",
+            alt: "Profile photo"
+          }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            className: "follow-profile-image",
+            src: "".concat(user.profile_picture),
+            alt: "Profile photo"
+          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "card-body follow-content"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "follow-button float-right"
+          }, user.can_follow == true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            onClick: _this13.handleUnfollow.bind(_this13, user.username),
+            className: "tweet transparent"
+          }, "Follow") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            onClick: _this13.handleUnfollow.bind(_this13, user.username),
+            className: "tweet transparent"
+          }, "Unfollow")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "follow-user-name"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/users/".concat(user.username)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, user.name.substring(0, user.name.search(" "))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/users/".concat(user.username)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "@", user.username))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "follow-user-description"
+          }, user.short_description == null ? '' : user.short_description.substring(0, 99) + ' ...'))));
+        }))));
+      }
+    }
+  }, {
+    key: "buildFollowers",
+    value: function buildFollowers() {
+      var _this14 = this;
+
+      if (this.state.loading === false) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "container"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "row"
+        }, this.state.followers.map(function (user) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "col-md-3 hidden followers-selected",
+            key: user.id
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "card follow"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "card-header follow-cover-photo"
+          }, user.cover_photo == null ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: "".concat(user.cover_photo),
+            alt: "Cover Photo",
+            className: "follow-cover-image"
+          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "follow-profile-photo"
+          }, user.profile_picture == null ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            className: "follow-profile-image",
+            src: "../../images/avatar-default.png",
+            alt: "Profile photo"
+          }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            className: "follow-profile-image",
+            src: "".concat(user.profile_picture),
+            alt: "Profile photo"
+          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "card-body follow-content"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "follow-button float-right"
+          }, user.can_follow == true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            onClick: _this14.handleUnfollow.bind(_this14, user.username),
+            className: "tweet transparent"
+          }, "Follow") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            onClick: _this14.handleUnfollow.bind(_this14, user.username),
+            className: "tweet transparent"
+          }, "Unfollow")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "follow-user-name"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/users/".concat(user.username)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, user.name.substring(0, user.name.search(" "))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/users/".concat(user.username)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "@", user.username))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "follow-user-description"
+          }, user.short_description == null ? '' : user.short_description.substring(0, 99) + ' ...'))));
+        }))));
+      }
+    }
+  }, {
+    key: "buildRetweetLikes",
+    value: function buildRetweetLikes() {
+      var _this15 = this;
+
+      if (this.state.retweet_likes.length > 0 && this.state.post_likes.length < 0) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "col-md-6 hidden likes-selected"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-body"
+        }, this.state.retweet_likes.map(function (retweet) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets",
+            key: retweet.id
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--img"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: retweet.owner_profile_picture == '' ? '/images/avatar-default.png' : "".concat(retweet.owner_profile_picture),
+            alt: "User Image",
+            className: retweet.owner_profile_picture == '' ? '' : 'image'
+          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--content"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--heading"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/users/".concat(retweet.owner_username)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, retweet.owner_name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tweets--username"
+          }, "@", retweet.owner_username), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "dot"
+          }, "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tweets--time"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, retweet.retweet_time)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "retweet_status"
+          }, "Retweeted")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "retweet__body"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--img"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: retweet.profile_picture == null ? '/images/avatar-default.png' : "".concat(retweet.profile_picture),
+            alt: "User Image",
+            className: retweet.profile_picture == '' ? '' : 'image'
+          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--content"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--heading"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/users/".concat(retweet.username)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, retweet.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tweets--username"
+          }, "@", retweet.username), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "dot"
+          }, "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tweets--time"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, retweet.post_time))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", retweet.body, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, JSON.parse(retweet.image) == null ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "retweet__img"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: "".concat(JSON.parse(retweet.image)[0]),
+            alt: "Retweet image",
+            className: "retweet-image"
+          }), JSON.parse(retweet.image).length > 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "img-transparent-box",
+            onClick: _this15.openModal.bind(_this15, retweet.id, JSON.parse(retweet.image).length)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "+".concat(JSON.parse(retweet.image).length - 1))) : '', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            id: _this15.state.modal_id + '-' + retweet.id,
+            className: "my-modal"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "my-close my-cursor",
+            onClick: _this15.closeModal.bind(_this15, retweet.id)
+          }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "my-modal-content"
+          }, JSON.parse(retweet.image) == null ? '' : JSON.parse(retweet.image).map(function (img, index) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: _this15.state.slide_class,
+              key: index
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: "my-numbertext"
+            }, index + 1, " / ", JSON.parse(retweet.image).length), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+              src: "".concat(JSON.parse(retweet.image)[index]),
+              alt: "Post image",
+              style: {
+                width: '100%'
+              }
+            }));
+          }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            onClick: _this15.prevSlides.bind(_this15, JSON.parse(retweet.image).length),
+            className: "my-prev"
+          }, "\u276E"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            onClick: _this15.nextSlides.bind(_this15, JSON.parse(retweet.image).length),
+            className: "my-next"
+          }, "\u276F"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "my-caption-container"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+            id: "my-caption"
+          })), JSON.parse(retweet.image) == null ? '' : JSON.parse(retweet.image).map(function (img, index) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: "my-column",
+              key: index
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+              onClick: _this15.currentSlide.bind(_this15, index + 1, JSON.parse(retweet.image).length),
+              src: "".concat(JSON.parse(retweet.image)[index]),
+              alt: "Retweet image",
+              className: "my-demo my-cursor",
+              style: {
+                width: '100%'
+              }
+            }));
+          })))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--footer"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            onClick: _this15.handleRetweetLike.bind(_this15, retweet.retweet_id)
+          }, retweet.liked === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: "https://img.icons8.com/color/24/000000/hearts.png",
+            className: "ion-icon heart"
+          }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: "https://img.icons8.com/ios/24/000000/hearts.png",
+            className: "ion-icon heart"
+          }), retweet.liked === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tooltiptext"
+          }, "Unlike") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tooltiptext"
+          }, "Like")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, retweet.retweet_likes)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/retweet/".concat(retweet.id)
+          }, _this15.state.user.id === retweet.owner ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+            class: "ion-icon retweet",
+            name: "repeat"
+          }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tooltiptext"
+          }, "Retweet"))))));
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-footer"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+          name: "arrow-dropup-circle",
+          class: "back-to-top",
+          title: "Back to Top",
+          onClick: this.scrollToTop.bind(this, 1000)
+        })))));
+      } else if (this.state.retweet_likes.length > 0 && this.state.post_likes.length > 0) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, this.state.retweet_likes.map(function (retweet) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets",
+            key: retweet.id
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--img"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: retweet.owner_profile_picture == '' ? '/images/avatar-default.png' : "".concat(retweet.owner_profile_picture),
+            alt: "User Image",
+            className: retweet.owner_profile_picture == '' ? '' : 'image'
+          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--content"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--heading"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/users/".concat(retweet.owner_username)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, retweet.owner_name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tweets--username"
+          }, "@", retweet.owner_username), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "dot"
+          }, "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tweets--time"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, retweet.retweet_time)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "retweet_status"
+          }, "Retweeted")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "retweet__body"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--img"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: retweet.profile_picture == null ? '/images/avatar-default.png' : "".concat(retweet.profile_picture),
+            alt: "User Image",
+            className: retweet.profile_picture == '' ? '' : 'image'
+          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--content"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--heading"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/users/".concat(retweet.username)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, retweet.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tweets--username"
+          }, "@", retweet.username), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "dot"
+          }, "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tweets--time"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, retweet.post_time))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", retweet.body, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, JSON.parse(retweet.image) == null ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "retweet__img"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: "".concat(JSON.parse(retweet.image)[0]),
+            alt: "Retweet image",
+            className: "retweet-image"
+          }), JSON.parse(retweet.image).length > 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "img-transparent-box",
+            onClick: _this15.openModal.bind(_this15, retweet.id, JSON.parse(retweet.image).length)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "+".concat(JSON.parse(retweet.image).length - 1))) : '', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            id: _this15.state.modal_id + '-' + retweet.id,
+            className: "my-modal"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "my-close my-cursor",
+            onClick: _this15.closeModal.bind(_this15, retweet.id)
+          }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "my-modal-content"
+          }, JSON.parse(retweet.image) == null ? '' : JSON.parse(retweet.image).map(function (img, index) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: _this15.state.slide_class,
+              key: index
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: "my-numbertext"
+            }, index + 1, " / ", JSON.parse(retweet.image).length), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+              src: "".concat(JSON.parse(retweet.image)[index]),
+              alt: "Post image",
+              style: {
+                width: '100%'
+              }
+            }));
+          }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            onClick: _this15.prevSlides.bind(_this15, JSON.parse(retweet.image).length),
+            className: "my-prev"
+          }, "\u276E"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            onClick: _this15.nextSlides.bind(_this15, JSON.parse(retweet.image).length),
+            className: "my-next"
+          }, "\u276F"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "my-caption-container"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+            id: "my-caption"
+          })), JSON.parse(retweet.image) == null ? '' : JSON.parse(retweet.image).map(function (img, index) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: "my-column",
+              key: index
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+              onClick: _this15.currentSlide.bind(_this15, index + 1, JSON.parse(retweet.image).length),
+              src: "".concat(JSON.parse(retweet.image)[index]),
+              alt: "Retweet image",
+              className: "my-demo my-cursor",
+              style: {
+                width: '100%'
+              }
+            }));
+          })))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--footer"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            onClick: _this15.handleRetweetLike.bind(_this15, retweet.retweet_id)
+          }, retweet.liked === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: "https://img.icons8.com/color/24/000000/hearts.png",
+            className: "ion-icon heart"
+          }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: "https://img.icons8.com/ios/24/000000/hearts.png",
+            className: "ion-icon heart"
+          }), retweet.liked === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tooltiptext"
+          }, "Unlike") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tooltiptext"
+          }, "Like")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, retweet.retweet_likes)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/retweet/".concat(retweet.id)
+          }, _this15.state.user.id === retweet.owner ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+            class: "ion-icon retweet",
+            name: "repeat"
+          }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tooltiptext"
+          }, "Retweet"))))));
+        }));
+      }
+    }
+  }, {
+    key: "buildLikes",
+    value: function buildLikes() {
+      var _this16 = this;
+
+      var retweetLikes = this.buildRetweetLikes();
+
+      if (this.state.post_likes.length > 0) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "col-md-6 hidden likes-selected"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-body"
+        }, this.state.post_likes.map(function (post) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets",
+            key: post.post_id
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--img"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: post.profile_picture == null ? '/images/avatar-default.png' : "".concat(post.profile_picture),
+            alt: "User Image",
+            className: post.profile_picture == '' ? '' : 'image'
+          })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--content"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--heading"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/users/".concat(post.username)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, post.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tweets--username"
+          }, "@", post.username), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "dot"
+          }, "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tweets--time"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, post.time))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", post.body, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets__img"
+          }, JSON.parse(post.image) == null ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: "".concat(JSON.parse(post.image)[0]),
+            alt: "Post image"
+          }), JSON.parse(post.image).length > 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "img-transparent-box",
+            onClick: _this16.openModal.bind(_this16, post.post_id, JSON.parse(post.image).length)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "+".concat(JSON.parse(post.image).length - 1))) : '', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            id: _this16.state.modal_id + '-' + post.id,
+            className: "my-modal"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "my-close my-cursor",
+            onClick: _this16.closeModal.bind(_this16, post.post_id)
+          }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "my-modal-content"
+          }, JSON.parse(post.image) == null ? '' : JSON.parse(post.image).map(function (img, index) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: _this16.state.slide_class,
+              key: index
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: "my-numbertext"
+            }, index + 1, " / ", JSON.parse(post.image).length), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+              src: "".concat(JSON.parse(post.image)[index]),
+              alt: "Post image",
+              style: {
+                width: '100%'
+              }
+            }));
+          }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            onClick: _this16.prevSlides.bind(_this16, JSON.parse(post.image).length),
+            className: "my-prev"
+          }, "\u276E"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            onClick: _this16.nextSlides.bind(_this16, JSON.parse(post.image).length),
+            className: "my-next"
+          }, "\u276F"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "my-caption-container"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+            id: "my-caption"
+          })), JSON.parse(post.image) == null ? '' : JSON.parse(post.image).map(function (img, index) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              className: "my-column",
+              key: index
+            }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+              onClick: _this16.currentSlide.bind(_this16, index + 1, JSON.parse(post.image).length),
+              src: "".concat(JSON.parse(post.image)[index]),
+              alt: "Post image",
+              className: "my-demo my-cursor",
+              style: {
+                width: '100%'
+              }
+            }));
+          }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "tweets--footer"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            onClick: _this16.handleLike.bind(_this16, post.post_id)
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: "https://img.icons8.com/color/24/000000/hearts.png",
+            className: "ion-icon heart"
+          }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tooltiptext"
+          }, "Unlike")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, post.likes)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: "/retweet/".concat(post.post_id)
+          }, _this16.state.user.id === post.id ? '' : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+            class: "ion-icon retweet",
+            name: "repeat"
+          }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+            className: "tooltiptext"
+          }, "Retweet"))))));
+        }), retweetLikes), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-footer"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+          name: "arrow-dropup-circle",
+          class: "back-to-top",
+          title: "Back to Top",
+          onClick: this.scrollToTop.bind(this, 1000)
+        })))));
+      }
+    }
+  }, {
+    key: "handleBodyChange",
+    value: function handleBodyChange(e) {
+      this.setState({
+        body: e.target.value
+      });
+    }
+  }, {
+    key: "handleBioChange",
+    value: function handleBioChange(e) {
+      this.setState({
+        bio: e.target.value
+      });
+    }
+  }, {
+    key: "handleLocationChange",
+    value: function handleLocationChange(e) {
+      this.setState({
+        location: e.target.value
+      });
+    }
+  }, {
+    key: "handleWebsiteChange",
+    value: function handleWebsiteChange(e) {
+      this.setState({
+        website: e.target.value
+      });
+    }
+  }, {
+    key: "handleBirthdayChange",
+    value: function handleBirthdayChange(e) {
+      this.setState({
+        dob: e.target.value
+      });
+    }
+  }, {
+    key: "handleFileChange",
+    value: function handleFileChange(e) {
+      this.readURI(e, 'image');
+
+      if (this.props.onChange !== undefined) {
+        this.props.onChange(e);
+      }
+    } // handleVideoChange(e) {
+    //     this.readURI(e, 'video');
+    //     if (this.props.onChange !== undefined) {
+    //         this.props.onChange(e);
+    //     }
+    //     this.setState({ video: e.target.value })
+    // }
+
+  }, {
+    key: "handleProfilePhotoSubmit",
+    value: function handleProfilePhotoSubmit(e) {
+      if (e.target.files) {
+        var reader = new FileReader();
+
+        reader.onload = function (ev) {
+          var _this17 = this;
+
+          this.setState({
+            profilePhoto: ev.target.result,
+            loading: true
+          }, function () {
+            var formData = new FormData();
+            formData.append('file', _this17.state.profilePhoto);
+            axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/add_profile_photo', formData, {
+              onUploadProgress: function onUploadProgress(progressEvent) {
+                console.log(progressEvent.loaded / progressEvent.total);
+              }
+            }).then(function (response) {
+              console.log('from profile photo submit', response);
+
+              _this17.setState({
+                user: response.data.user,
+                profile_visited: response.data.user,
+                loading: false
+              });
+            });
+          });
+        }.bind(this);
+
+        reader.readAsDataURL(e.target.files[0]);
+      }
+    }
+  }, {
+    key: "handleCoverPhotoSubmit",
+    value: function handleCoverPhotoSubmit(e) {
+      if (e.target.files) {
+        var reader = new FileReader();
+
+        reader.onload = function (ev) {
+          var _this18 = this;
+
+          this.setState({
+            coverPhoto: ev.target.result,
+            loading: true
+          }, function () {
+            var formData = new FormData();
+            formData.append('file', _this18.state.coverPhoto);
+            axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/add_cover_photo', formData, {
+              onUploadProgress: function onUploadProgress(progressEvent) {
+                console.log(progressEvent.loaded / progressEvent.total);
+              }
+            }).then(function (response) {
+              console.log('from cover photo submit', response);
+
+              _this18.setState({
+                user: response.data.user,
+                profile_visited: response.data.user,
+                loading: false
+              });
+            });
+          });
+        }.bind(this);
+
+        reader.readAsDataURL(e.target.files[0]);
+      }
+    }
+  }, {
+    key: "handleLike",
+    value: function handleLike(post) {
+      var _this19 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/likes/".concat(post)).then(function (response) {
+        console.log('from handle like', response);
+
+        _this19.setState(function (prevState) {
+          return {
+            posts: prevState.posts.map(function (el) {
+              return el.id === post ? response.data.post[0] : el;
+            })
+          };
+        });
+      });
+    }
+  }, {
+    key: "handleRetweetLike",
+    value: function handleRetweetLike(retweet) {
+      var _this20 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/retweet/likes/".concat(retweet)).then(function (response) {
+        console.log('from handle retweet like', response);
+
+        _this20.setState(function (prevState) {
+          return {
+            retweets: prevState.retweets.map(function (el) {
+              return el.retweet_id === retweet ? response.data.retweet[0] : el;
+            })
+          };
+        });
+      });
+    }
+  }, {
+    key: "handleFollow",
+    value: function handleFollow(username) {
+      var _this21 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/users/".concat(username, "/follow")).then(function (response) {
+        console.log('from handle follow', response);
+
+        _this21.setState({
+          who_to_follow: response.data.who_to_follow,
+          following_count: response.data.following,
+          following: [response.data.user].concat(_toConsumableArray(_this21.state.following))
+        });
+      });
+    }
+  }, {
+    key: "handleUnfollow",
+    value: function handleUnfollow(username) {
+      var _this22 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/users/".concat(username, "/unfollow")).then(function (response) {
+        console.log('from handle unfollow', response);
+
+        _this22.setState({
+          who_to_follow: response.data.who_to_follow,
+          following_count: response.data.following,
+          following: _this22.state.following.filter(function (following) {
+            return following.username != username;
+          })
+        });
+      });
+    }
+  }, {
+    key: "buildProfileButton",
+    value: function buildProfileButton() {
+      if (this.state.profile_visited.username === this.state.user.username && this.state.edit_state === false) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: this.editProfile.bind(this),
+          className: "tweet transparent"
+        }, "Edit Profile"));
+      } else if (this.state.can_follow === true && this.state.edit_state === false) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: this.handleFollow.bind(this, this.state.profile_visited.username),
+          className: "tweet transparent"
+        }, "Follow"));
+      } else if (this.state.can_follow === false && this.state.edit_state === false) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: this.handleUnfollow.bind(this, this.state.profile_visited.username),
+          className: "tweet transparent"
+        }, "Unfollow"));
+      } else if (this.state.edit_state === true) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "edit-profile"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: this.editProfile.bind(this),
+          className: "tweet transparent"
+        }, "Cancel"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          onClick: this.handleEditSubmit.bind(this),
+          className: "tweet transparent"
+        }, "Save Changes")));
+      }
+    }
+  }, {
+    key: "buildCoverPhoto",
+    value: function buildCoverPhoto() {
+      if (this.state.profile_visited.cover_photo !== null && this.state.edit_state === false) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          className: "cover-image",
+          src: this.state.profile_visited.cover_photo,
+          alt: "Cover photo"
+        }));
+      } else if (this.state.edit_state === true && this.state.user.cover_photo !== null) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          className: "cover-image",
+          src: this.state.profile_visited.cover_photo,
+          alt: "Cover photo"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          id: "cover-photo",
+          type: "file",
+          name: "",
+          accept: "image/gif,image/jpeg,image/jpg,image/png",
+          title: "Add a cover photo",
+          className: "upload-photo",
+          onChange: this.handleCoverPhotoSubmit.bind(this)
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "cover-transparent-box"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+          htmlFor: "cover-photo",
+          className: this.state.profile_visited.cover_photo == null || this.state.edit_state === true ? '' : 'hidden'
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+          xmlns: "http://www.w3.org/2000/svg",
+          width: "30",
+          height: "27",
+          viewBox: "0 0 20 17",
+          className: "upload-icon"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+          d: "M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tooltiptext"
+        }, "Add a cover photo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Change your cover photo")));
+      } else if (this.state.edit_state === true && this.state.user.cover_photo == null) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          id: "cover-photo",
+          type: "file",
+          name: "",
+          accept: "image/gif,image/jpeg,image/jpg,image/png",
+          title: "Add a cover photo",
+          className: "upload-photo",
+          onChange: this.handleCoverPhotoSubmit.bind(this)
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+          htmlFor: "cover-photo",
+          className: this.state.profile_visited.cover_photo == null || this.state.edit_state === true ? '' : 'hidden'
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+          xmlns: "http://www.w3.org/2000/svg",
+          width: "30",
+          height: "27",
+          viewBox: "0 0 20 17",
+          className: "upload-icon"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+          d: "M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tooltiptext"
+        }, "Add a cover photo")));
+      }
+    }
+  }, {
+    key: "buildProfilePhoto",
+    value: function buildProfilePhoto() {
+      if (this.state.profile_visited.profile_picture !== null && this.state.edit_state === false) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          className: "profile-image",
+          src: this.state.profile_visited.profile_picture,
+          alt: "Profile photo"
+        }));
+      } else if (this.state.edit_state === true && this.state.user.profile_picture !== null) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          className: "profile-image",
+          src: this.state.profile_visited.profile_picture,
+          alt: "Profile photo"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          id: "profile-photo",
+          type: "file",
+          name: "",
+          accept: "image/gif,image/jpeg,image/jpg,image/png",
+          title: "Add a profile photo",
+          className: "upload-photo",
+          onChange: this.handleProfilePhotoSubmit.bind(this)
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "transparent-box"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+          htmlFor: "profile-photo",
+          className: this.state.profile_visited.profile_picture == null || this.state.edit_state === true ? '' : 'hidden'
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+          xmlns: "http://www.w3.org/2000/svg",
+          width: "30",
+          height: "27",
+          viewBox: "0 0 20 17",
+          className: "upload-icon"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+          d: "M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tooltiptext"
+        }, "Add a profile photo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Change your profile photo")));
+      } else if (this.state.edit_state === true && this.state.user.profile_picture == null) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          id: "profile-photo",
+          type: "file",
+          name: "",
+          accept: "image/gif,image/jpeg,image/jpg,image/png",
+          title: "Add a profile photo",
+          className: "upload-photo",
+          onChange: this.handleProfilePhotoSubmit.bind(this)
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+          htmlFor: "profile-photo",
+          className: this.state.profile_visited.profile_picture == null || this.state.edit_state === true ? '' : 'hidden'
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+          xmlns: "http://www.w3.org/2000/svg",
+          width: "30",
+          height: "27",
+          viewBox: "0 0 20 17",
+          className: "upload-icon"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+          d: "M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tooltiptext"
+        }, "Add a profile photo")));
+      } else if (this.state.profile_visited.profile_picture == null && this.state.profile_visited.username == this.state.user.username) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          id: "profile-photo",
+          type: "file",
+          name: "",
+          accept: "image/gif,image/jpeg,image/jpg,image/png",
+          title: "Add a profile photo",
+          className: "upload-photo",
+          onChange: this.handleProfilePhotoSubmit.bind(this)
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+          htmlFor: "profile-photo",
+          className: this.state.profile_visited.profile_picture == null || this.state.edit_state === true ? '' : 'hidden'
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+          xmlns: "http://www.w3.org/2000/svg",
+          width: "30",
+          height: "27",
+          viewBox: "0 0 20 17",
+          className: "upload-icon"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+          d: "M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "tooltiptext"
+        }, "Add a profile photo")));
+      }
+    }
+  }, {
+    key: "buildBioTag",
+    value: function buildBioTag() {
+      if (this.state.edit_state === true) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          type: "text",
+          placeholder: "Bio",
+          className: "user-info-input",
+          onChange: this.handleBioChange.bind(this),
+          value: this.state.user.short_description ? this.state.user.short_description : ''
+        }));
+      } else if (this.state.profile_visited.short_description && this.state.edit_state === false) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          className: "profile-info-icon bio",
+          src: "https://img.icons8.com/material-outlined/24/000000/resume.png"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " ", this.state.profile_visited.short_description, " ")));
+      }
+    }
+  }, {
+    key: "buildLocationTag",
+    value: function buildLocationTag() {
+      if (this.state.edit_state === true) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          type: "text",
+          placeholder: "Location",
+          className: "user-info-input",
+          onChange: this.handleLocationChange.bind(this),
+          value: this.state.user.location ? this.state.user.location : ''
+        }));
+      } else if (this.state.profile_visited.location && this.state.edit_state === false) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+          name: "pin",
+          class: "profile-info-icon"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " ", this.state.profile_visited.location, " ")));
+      }
+    }
+  }, {
+    key: "buildWebsiteTag",
+    value: function buildWebsiteTag() {
+      if (this.state.edit_state === true) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          type: "url",
+          placeholder: "Website",
+          className: "user-info-input",
+          onChange: this.handleWebsiteChange.bind(this),
+          value: this.state.user.website ? this.state.user.website : ''
+        }));
+      } else if (this.state.profile_visited.website && this.state.edit_state === false) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+          name: "globe",
+          class: "profile-info-icon"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: this.state.profile_visited.website,
+          target: "_blank"
+        }, " ", this.state.profile_visited.website.substring(0, 30) + '...', " ")));
+      }
+    }
+  }, {
+    key: "buildBirthdayTag",
+    value: function buildBirthdayTag() {
+      if (this.state.edit_state === true) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          type: "date",
+          className: "user-info-input",
+          onChange: this.handleBirthdayChange.bind(this),
+          value: this.state.user.dob ? this.state.user.dob : ''
+        }));
+      } else if (this.state.profile_visited.dob && this.state.edit_state === false) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          className: "profile-info-icon",
+          src: "https://img.icons8.com/material/24/000000/birthday.png"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " ", this.state.profile_visited.dob, " ")));
+      }
+    }
+  }, {
+    key: "buildSideBar",
+    value: function buildSideBar() {
+      var whoToFollow = this.whoToFollowTag();
+      var trends = this.trendsTag();
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-3",
+        id: "sidebar"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "who-to-follow"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "heading"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Who to follow")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "body-parent"
+      }, whoToFollow), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: ""
+      }, "Find people to follow"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "trends"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Trending users"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "trends__list"
+      }, trends))));
+    }
+  }, {
+    key: "mainLoadingTag",
+    value: function mainLoadingTag() {
+      if (this.state.loading === true) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          id: "main"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "spinner"
+        })));
+      }
+    }
+  }, {
+    key: "changeURL",
+    value: function changeURL(index) {
+      var a = this.state.user;
+
+      switch (index) {
+        case 0:
+          document.getElementsByClassName('selected')[0].classList.remove('selected');
+          document.getElementsByClassName('selected-tweet')[0].classList.add('selected');
+          document.getElementById('main_profile').classList.remove('hidden');
+
+          for (var i = 0; i < document.getElementsByClassName('following-selected').length; i++) {
+            document.getElementsByClassName('following-selected')[i].classList.add('hidden');
+          }
+
+          for (var _i = 0; _i < document.getElementsByClassName('followers-selected').length; _i++) {
+            document.getElementsByClassName('followers-selected')[_i].classList.add('hidden');
+          }
+
+          for (var _i2 = 0; _i2 < document.getElementsByClassName('likes-selected').length; _i2++) {
+            document.getElementsByClassName('likes-selected')[_i2].classList.add('hidden');
+          }
+
+          document.getElementsByClassName('user-detail-container')[0].classList.remove('hidden');
+          document.getElementById('sidebar').classList.remove('hidden');
+          break;
+
+        case 1:
+          document.getElementsByClassName('selected')[0].classList.remove('selected');
+          document.getElementsByClassName('following')[0].classList.add('selected');
+          document.getElementById('main_profile').classList.add('hidden');
+
+          for (var _i3 = 0; _i3 < document.getElementsByClassName('following-selected').length; _i3++) {
+            document.getElementsByClassName('following-selected')[_i3].classList.remove('hidden');
+          }
+
+          for (var _i4 = 0; _i4 < document.getElementsByClassName('followers-selected').length; _i4++) {
+            document.getElementsByClassName('followers-selected')[_i4].classList.add('hidden');
+          }
+
+          for (var _i5 = 0; _i5 < document.getElementsByClassName('likes-selected').length; _i5++) {
+            document.getElementsByClassName('likes-selected')[_i5].classList.add('hidden');
+          }
+
+          document.getElementsByClassName('user-detail-container')[0].classList.add('hidden');
+          document.getElementById('sidebar').classList.add('hidden');
+          break;
+
+        case 2:
+          document.getElementsByClassName('selected')[0].classList.remove('selected');
+          document.getElementsByClassName('followers')[0].classList.add('selected');
+          document.getElementById('main_profile').classList.add('hidden');
+
+          for (var _i6 = 0; _i6 < document.getElementsByClassName('following-selected').length; _i6++) {
+            document.getElementsByClassName('following-selected')[_i6].classList.add('hidden');
+          }
+
+          for (var _i7 = 0; _i7 < document.getElementsByClassName('followers-selected').length; _i7++) {
+            document.getElementsByClassName('followers-selected')[_i7].classList.remove('hidden');
+          }
+
+          for (var _i8 = 0; _i8 < document.getElementsByClassName('likes-selected').length; _i8++) {
+            document.getElementsByClassName('likes-selected')[_i8].classList.add('hidden');
+          }
+
+          document.getElementsByClassName('user-detail-container')[0].classList.add('hidden');
+          document.getElementById('sidebar').classList.add('hidden');
+          break;
+
+        case 3:
+          document.getElementsByClassName('selected')[0].classList.remove('selected');
+          document.getElementsByClassName('likes')[0].classList.add('selected');
+          document.getElementById('main_profile').classList.add('hidden');
+
+          for (var _i9 = 0; _i9 < document.getElementsByClassName('following-selected').length; _i9++) {
+            document.getElementsByClassName('following-selected')[_i9].classList.add('hidden');
+          }
+
+          for (var _i10 = 0; _i10 < document.getElementsByClassName('followers-selected').length; _i10++) {
+            document.getElementsByClassName('followers-selected')[_i10].classList.add('hidden');
+          }
+
+          for (var _i11 = 0; _i11 < document.getElementsByClassName('likes-selected').length; _i11++) {
+            document.getElementsByClassName('likes-selected')[_i11].classList.remove('hidden');
+          }
+
+          document.getElementsByClassName('user-detail-container')[0].classList.remove('hidden');
+          document.getElementById('sidebar').classList.remove('hidden');
+          break;
+      }
+    }
+  }, {
+    key: "editProfile",
+    value: function editProfile() {
+      if (this.state.edit_state === false) {
+        this.setState({
+          edit_state: true
+        });
+      } else {
+        this.setState({
+          edit_state: false
+        });
+      }
+    }
+  }, {
+    key: "formatNumber",
+    value: function formatNumber(type) {
+      var num, numSplit, int;
+
+      switch (type) {
+        case 'tweets':
+          num = this.state.profile_visited.tweets + this.state.retweets.length;
+          break;
+
+        case 'following':
+          num = this.state.following_count;
+          break;
+
+        case 'followers':
+          num = this.state.followers_count;
+          break;
+
+        case 'likes':
+          num = this.state.likes_count;
+          break;
+
+        default:
+          num = 0;
+      }
+
+      num = Math.abs(num);
+      num = num.toFixed(2);
+      numSplit = num.split('.');
+      int = numSplit[0];
+
+      if (int.length > 3) {
+        var start;
+        start = int.length % 3 === 0 ? 3 : int.length % 3;
+
+        while (start < int.length) {
+          int = int.substr(0, start) + ',' + int.substr(start);
+          start += 4;
+        }
+      }
+
+      return ' ' + int;
+    }
+  }, {
+    key: "user",
+    value: function user() {
+      var profileButton = this.buildProfileButton();
+      var mainProfile = this.buildMainProfile();
+      var following = this.buildFollowing();
+      var followers = this.buildFollowers();
+      var retweetLikes = this.state.post_likes.length < 0 ? this.buildRetweetLikes() : '';
+      var likes = this.buildLikes();
+      var sideBar = this.buildSideBar();
+      var coverPhoto = this.buildCoverPhoto();
+      var profilePhoto = this.buildProfilePhoto();
+      var buildBioTag = this.buildBioTag();
+      var buildLocationTag = this.buildLocationTag();
+      var buildWebsiteTag = this.buildWebsiteTag();
+      var buildBirthdayTag = this.buildBirthdayTag();
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "user-photo-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "user-cover-photo"
+      }, coverPhoto), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "user-profile-photo"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "choose-photo user-choose-photo"
+      }, profilePhoto), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "user-parent-info"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "user-info user-profile-info"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "selected selected-tweet",
+        onClick: this.changeURL.bind(this, 0)
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Tweets"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, this.formatNumber('tweets').length > 3 ? this.formatNumber('tweets').substr(0, this.formatNumber('tweets').search(',')) + 'K' : this.formatNumber('tweets'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "tooltiptext"
+      }, this.formatNumber('tweets'), " Tweets"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "following",
+        onClick: this.changeURL.bind(this, 1)
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Following"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, this.formatNumber('following').length > 3 ? this.formatNumber('following').substr(0, this.formatNumber('following').search(',')) + 'K' : this.formatNumber('following'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "tooltiptext"
+      }, this.formatNumber('following'), " Following"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "followers",
+        onClick: this.changeURL.bind(this, 2)
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Followers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, this.formatNumber('followers').length > 3 ? this.formatNumber('followers').substr(0, this.formatNumber('followers').search(',')) + 'K' : this.formatNumber('followers'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "tooltiptext"
+      }, this.formatNumber('followers'), " Followers"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "likes",
+        onClick: this.changeURL.bind(this, 3)
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Likes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, this.formatNumber('likes').length > 3 ? this.formatNumber('likes').substr(0, this.formatNumber('likes').search(',')) + 'K' : this.formatNumber('likes'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "tooltiptext"
+      }, this.formatNumber('likes'), " Likes")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "user-profile-button"
+      }, profileButton)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container user-detail-container",
+        style: {
+          marginTop: 35
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "profile-info"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/users/".concat(this.state.profile_visited.username),
+        className: "user-firstname"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, this.state.profile_visited.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/users/".concat(this.state.profile_visited.username),
+        className: "user-username"
+      }, "@", this.state.profile_visited.username)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ion-icon", {
+        name: "calendar",
+        class: "profile-info-icon calendar"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Joined ", this.state.profile_visited.created_at ? new Date(Date.parse(this.state.profile_visited.created_at)).toDateString().substring(new Date(Date.parse(this.state.profile_visited.created_at)).toDateString().search(" "), new Date(Date.parse(this.state.profile_visited.created_at)).toDateString().length) : '')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, buildBioTag), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, buildLocationTag), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, buildWebsiteTag), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, buildBirthdayTag))), mainProfile, " ", likes, " ", retweetLikes, sideBar)), following, " ", followers);
+    }
+  }, {
     key: "render",
     value: function render() {
+      var mainLoading = this.mainLoadingTag();
+      var user = this.user();
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container-fluid",
         style: {
           padding: 0
         }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "user-photo-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "user-cover-photo"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "user-profile-photo"
-      }, "Tweets", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "0")));
+      }, this.state.loading ? mainLoading : user);
     }
   }]);
 
@@ -73006,4 +76008,3 @@ module.exports = __webpack_require__(/*! C:\xampp2\htdocs\laratweet\resources\sa
 /***/ })
 
 /******/ });
-

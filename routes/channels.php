@@ -20,3 +20,15 @@ Broadcast::channel('App.User.{id}', function ($user, $id) {
 Broadcast::channel('new-post', function ($user) {
     return Auth::check();
 });
+
+Broadcast::channel('new-chat', function ($user) {
+    return Auth::check();
+});
+
+Broadcast::channel('Chat.{user_id}.{follower_id}', function ($user, $user_id, $follower_id) {
+    return $user->id == $follower_id;
+});
+
+Broadcast::channel('Online', function ($user) {
+    return $user;
+});

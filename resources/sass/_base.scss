@@ -9,6 +9,12 @@ $color-valid: #55c57a;
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
+// BREAKPOINT VARIABLES
+$bp-tablet: 48em;
+$bp-mobile-large: 27em;
+$bp-mobile-medium: 24em;
+$bp-mobile-small: 20em;
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -26,4 +32,8 @@ body {
     font-weight: 300;
     line-height: 1.6;
     overflow: hidden;
+
+    @media only screen and (max-width: $bp-tablet) {
+        overflow-x: hidden;
+    }
 }

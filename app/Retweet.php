@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 class Retweet extends Model
 {
     //
+    protected $primaryKey = 'retweet_id';
+
     protected $fillable = ['retweet_user_id', 'post_id'];
 
     protected $appends =
@@ -46,7 +48,7 @@ class Retweet extends Model
     }
 
     public function user() {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 
     public function getOwner() {

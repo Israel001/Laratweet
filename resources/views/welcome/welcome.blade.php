@@ -13,15 +13,15 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="apple-mobile-web-app-title" content="Laratweet. It's what's happening.">
-        <link rel="apple-touch-icon" href="{{ asset('images/icons/app-icon-57x57.png') }}" sizes="57x57">
-        <link rel="apple-touch-icon" href="{{ asset('images/icons/app-icon-60x60.png') }}" sizes="60x60">
-        <link rel="apple-touch-icon" href="{{ asset('images/icons/app-icon-72x72.png') }}" sizes="72x72">
-        <link rel="apple-touch-icon" href="{{ asset('images/icons/app-icon-76x76.png') }}" sizes="76x76">
-        <link rel="apple-touch-icon" href="{{ asset('images/icons/app-icon-114x114.png') }}" sizes="114x114">
-        <link rel="apple-touch-icon" href="{{ asset('images/icons/app-icon-120x120.png') }}" sizes="120x120">
-        <link rel="apple-touch-icon" href="{{ asset('images/icons/app-icon-144x144.png') }}" sizes="144x144">
-        <link rel="apple-touch-icon" href="{{ asset('images/icons/app-icon-152x152.png') }}" sizes="152x152">
-        <link rel="apple-touch-icon" href="{{ asset('images/icons/app-icon-180x180.png') }}" sizes="180x180">
+        <link rel="apple-touch-icon" href="{{ asset('images/icons/apple-icon-57x57.png') }}" sizes="57x57">
+        <link rel="apple-touch-icon" href="{{ asset('images/icons/apple-icon-60x60.png') }}" sizes="60x60">
+        <link rel="apple-touch-icon" href="{{ asset('images/icons/apple-icon-72x72.png') }}" sizes="72x72">
+        <link rel="apple-touch-icon" href="{{ asset('images/icons/apple-icon-76x76.png') }}" sizes="76x76">
+        <link rel="apple-touch-icon" href="{{ asset('images/icons/apple-icon-114x114.png') }}" sizes="114x114">
+        <link rel="apple-touch-icon" href="{{ asset('images/icons/apple-icon-120x120.png') }}" sizes="120x120">
+        <link rel="apple-touch-icon" href="{{ asset('images/icons/apple-icon-144x144.png') }}" sizes="144x144">
+        <link rel="apple-touch-icon" href="{{ asset('images/icons/apple-icon-152x152.png') }}" sizes="152x152">
+        <link rel="apple-touch-icon" href="{{ asset('images/icons/apple-icon-180x180.png') }}" sizes="180x180">
         <meta name="msapplication-TileImage" content="{{ asset('images/icons/app-icon-144x144.png') }}">
         <meta name="msapplication-TileColor" content="#fff">
         <meta name="theme-color" content="#2a79f2">
@@ -36,7 +36,7 @@
                 </div>
             @endif
             <div class="container">
-                <div class="left">
+                <div class="left" id="left">
                     <div class="features">
                         <ul>
                             <li class="features__item">
@@ -101,7 +101,7 @@
             </div>
 
             <div class="signup popup" id="popup">
-                <a href="" class="popup__close">X</a>
+                <a href="#left" class="popup__close">X</a>
                 <div class="popup__content">
                     <span class="popup__heading">JOIN US TODAY</span>
                     <form id="signup" method="POST" action="{{ route('register') }}" class="form" autocomplete="off">
@@ -139,10 +139,12 @@
             </div>
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="{{ asset('js/promise.js') }}"></script>
+            <script src="{{ asset('js/fetch.js') }}"></script>
             <script src="{{ asset('js/scripts.js') }}"></script>
             <script src="{{ asset('js/script.js') }}"></script>
         </body>
     </html>
 @else
-    <script> location.replace("http://laratweet.local:8080/home"); </script>
+    <script> location.replace('/home'); </script>
 @endguest
